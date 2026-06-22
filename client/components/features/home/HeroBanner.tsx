@@ -55,18 +55,23 @@ export default function HeroBanner({ data }: { data?: HeroData }) {
 
   useEffect(() => {
     setMounted(true);
+    let isMounted = true;
     let ctx: { revert: () => void } | null = null;
     (async () => {
       const { default: gsap } = await import("gsap");
+      if (!isMounted) return;
       gsapRef.current = gsap;
       ctx = gsap.context(() => {
         const ease = "power3.out";
         // Static elements animation on page load
-        gsap.from(statsRef.current,    { y: 30, opacity: 0, duration: 0.7, ease, delay: 0.7 });
-        gsap.from(socialRef.current,   { x: -30, opacity: 0, duration: 0.7, ease, delay: 0.8 });
+        gsap.fromTo(statsRef.current,  { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease, delay: 0.7 });
+        gsap.fromTo(socialRef.current, { x: -30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.7, ease, delay: 0.8 });
       });
     })();
-    return () => { ctx?.revert(); };
+    return () => { 
+      isMounted = false;
+      ctx?.revert(); 
+    };
   }, []);
 
   const animateSlide = (swiper: any) => {
