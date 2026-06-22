@@ -1,0 +1,15 @@
+{
+  "brands": [],
+  "metaTitle": "About Us | PikoNox - Modern Business Consulting",
+  "metaDescription": "Learn more about PikoNox, our mission, visualizers, and team.",
+  "metaKeywords": "about, agency, consulting, team",
+  "breadcrumb": {
+    "title": "About Our Agency",
+    "subtitle": "We are a hub of innovation, collaboration, and artistry, dedicated to crafting unforgettable digital experiences that resonate and inspire."
+  },
+  "storyImage": {
+    "src": "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/about-us/pic5.png",
+    "alt": "Our story"
+  },
+  "layout": ["brandStrip", "history", "storyImage", "whyChooseUs", "team", "faq", "blog"]
+}

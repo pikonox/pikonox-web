@@ -1,0 +1,86 @@
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import { Toaster } from "react-hot-toast";
+import NextTopLoader from "nextjs-toploader";
+import "./globals.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "PikoNox - Business Consulting & Technology Solutions",
+    template: "%s | PikoNox",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  description:
+    "PikoNox delivers cutting-edge business consulting, digital transformation, and technology solutions for modern enterprises. Unlock growth with expert financial strategy and innovation.",
+  keywords: [
+    "pikonox",
+    "business consulting",
+    "technology solutions",
+    "digital transformation",
+    "financial strategy",
+    "IT consulting",
+    "enterprise solutions",
+  ],
+  authors: [{ name: "pikonox" }],
+  openGraph: {
+    type: "website",
+    title: "pikonox - Business Consulting & Technology Solutions",
+    description:
+      "pikonox delivers cutting-edge business consulting, digital transformation, and technology solutions for modern enterprises.",
+    siteName: "pikonox",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "pikonox - Business Consulting & Technology Solutions",
+    description:
+      "Cutting-edge business consulting and technology solutions for modern enterprises.",
+  },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} min-h-screen selection:bg-primary selection:text-white font-(--font-poppins)`}>
+        <NextTopLoader
+          color="#3b82f6"
+          height={3}
+          showSpinner={false}
+          shadow="0 0 10px #3b82f6, 0 0 5px #3b82f6"
+          easing="ease"
+          speed={200}
+        />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              borderRadius: "10px",
+              background: "#1e293b",
+              color: "#f8fafc",
+              fontSize: "14px",
+              fontWeight: "500",
+            },
+            success: { iconTheme: { primary: "#22c55e", secondary: "#fff" } },
+            error: { iconTheme: { primary: "#ef4444", secondary: "#fff" } },
+          }}
+        />
+        {children}
+      </body>
+    </html>
+  );
+}

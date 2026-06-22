@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"e:\\\\XiomTech\\\\XiomTech_v3\" -Directory)",
+      "Bash(Select-Object Name)",
+      "Bash(xargs wc *)",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\lib\\\\auth.ts\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\lib\\\\auth.ts\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\lib\" -Force)",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\app\\\\lib\\\\actions.ts\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\lib\\\\actions.ts\")",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\Components\\\\admin\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\components\\\\admin\" -Recurse)",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\components\\\\auth\" -Force)",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\Components\\\\auth\\\\LoginForm.tsx\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\components\\\\auth\\\\LoginForm.tsx\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(admin\\)\" -Force)",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\app\\\\\\(admin\\)\\\\layout.tsx\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(admin\\)\\\\layout.tsx\")",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\app\\\\\\(admin\\)\\\\admin\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(admin\\)\\\\admin\" -Recurse)",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(auth\\)\\\\login\" -Force)",
+      "PowerShell(Copy-Item \"e:\\\\XiomTech\\\\XiomTech_v3\\\\example-site\\\\src\\\\app\\\\\\(auth\\)\\\\login\\\\page.tsx\" \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(auth\\)\\\\login\\\\page.tsx\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\data\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\public\\\\uploads\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\api\\\\upload\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\\\(public\\)\\\\built-by\" -Force)",
+      "Bash(Get-ChildItem -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\" -Recurse -Directory)",
+      "Bash(Get-ChildItem -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(grep -E \"\\\\.\\(ts|json\\)$\")",
+      "Bash(mkdir -p \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\app\\\\api\\\\serve-upload\\\\[...path]\")",
+      "Bash(ls /mnt/c/Users/walton/.claude/projects/e--XiomTech-XiomTech-v3/memory/ 2>/dev/null || echo \"empty\")",
+      "Read(//mnt/c/Users/walton/.claude/projects/e--XiomTech-XiomTech-v3/**)",
+      "Bash(Get-ChildItem -Path \"e:\\\\XiomTech\\\\XiomTech_v3\\\\client\\\\components\\\\admin\\\\forms\\\\\" -File | Select-Object Name)"
+    ],
+    "additionalDirectories": [
+      "e:\\XiomTech\\XiomTech_v3\\client\\app\\api\\serve-upload"
+    ]
+  }
+}

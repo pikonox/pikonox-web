@@ -1,0 +1,18 @@
+{
+  "sections": [
+    {
+      "label": "Our Mission",
+      "title": "Our Mission, Your Success",
+      "desc": "At PikoNox, our mission is simple: to turn your ideas into impactful realities. We are dedicated to providing innovative, creative solutions that drive growth and elevate brands.",
+      "img": "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/portfolio/pic1.png",
+      "alt": "Mission illustration"
+    },
+    {
+      "label": "Our Vision",
+      "title": "Visionaries Behind the Brands",
+      "desc": "Our team of experts combines strategy, creativity, and technology to build brands that matter. We focus on long-term impact and sustainable growth for every client we partner with.",
+      "img": "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/portfolio/pic2.png",
+      "alt": "Vision illustration"
+    }
+  ]
+}

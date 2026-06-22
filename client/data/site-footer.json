@@ -1,0 +1,34 @@
+{
+  "cta": {
+    "title": "Ready to Build a More Profitable, Sustainable Business?",
+    "buttonLabel": "Free Consultation",
+    "buttonHref": "/contact"
+  },
+  "mapImage": "/map.svg",
+  "locations": [
+    "123 Finance Lane, Growth City, ST 45678 USA",
+    "456 Prosperity Avenue, Silicon Valley, CA 94043 USA",
+    "200 Growth Street, Sydney CBD, NSW 2000, Australia",
+    "15 Fintech Road, District 1, Singapore 048583",
+    "42 Wealth Avenue, London E14 5AB, United Kingdom"
+  ],
+  "footerLinks": [
+    { "sub": "See our work", "label": "Portfolio", "href": "/work" },
+    { "sub": "How we do it", "label": "Process", "href": "/" },
+    { "sub": "Who we are", "label": "About", "href": "/about" },
+    { "sub": "Get Started", "label": "Contact", "href": "/contact" }
+  ],
+  "contactCta": {
+    "eyebrow": "Let's work together",
+    "label": "Get In Touch",
+    "href": "/contact"
+  },
+  "socialLinks": [
+    { "label": "Instagram", "href": "https://www.instagram.com" },
+    { "label": "Facebook", "href": "https://www.facebook.com" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com" },
+    { "label": "X", "href": "https://twitter.com" }
+  ],
+  "copyrightBrand": "pikonox",
+  "copyrightText": "All Rights Reserved"
+}

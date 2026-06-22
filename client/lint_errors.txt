@@ -1,0 +1,465 @@
+
+> client@0.1.0 lint
+> eslint
+
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\about\page.tsx
+  33:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\blog\[slug]\page.tsx
+   5:26  warning  'Tag' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+   5:31  warning  'Share2' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  48:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\blog\page.tsx
+   5:38  warning  'Tag' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  27:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\contact\page.tsx
+  116:70  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\products\[slug]\page.tsx
+    5:24  warning  'ShoppingCart' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+    6:8   warning  'Link' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   43:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+   52:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  152:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\products\page.tsx
+   5:22  warning  'ShoppingCart' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   5:36  warning  'Tag' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  31:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\services\[slug]\page.tsx
+   5:36  warning  'ArrowLeft' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  45:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\services\page.tsx
+  34:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\work\[slug]\page.tsx
+    5:10  warning  'CheckCircle2' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+    5:44  warning  'Award' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   53:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  211:22  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\(public)\work\page.tsx
+   5:45  warning  'Target' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  31:39  warning  'idx' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  37:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\activity\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\analytics\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\blogs\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\brands\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\contact\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\faqs\page.tsx
+  16:38  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  19:42  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  38:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\faqs\page.tsx:38:5
+  36 |
+  37 |   useEffect(() => {
+> 38 |     load();
+     |     ^^^^ Avoid calling setState() directly within an effect
+  39 |   }, []);
+  40 |
+  41 |   const openCreate = () => {  react-hooks/set-state-in-effect
+  52:27  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\forms\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\portfolio\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\seo\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\services\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\team\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\testimonials\page.tsx
+  1:10  warning  'cn' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\content\users\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\editor\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\layout.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\media\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\navigation\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\pages\[id]\page.tsx
+   54:37  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  125:36  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  130:50  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  142:60  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  144:14  warning  'err' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  148:21  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\pages\[id]\page.tsx:148:21
+  146 |   }, [pageId]);
+  147 |
+> 148 |   useEffect(() => { loadData(); }, [loadData]);
+      |                     ^^^^^^^^ Avoid calling setState() directly within an effect
+  149 |
+  150 |   const addSection = async () => {
+  151 |     if (!newSectionType) return;  react-hooks/set-state-in-effect
+  221:18  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  239:43  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  360:55  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\pages\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\settings\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\(dashboard)\themes\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\layout.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\admin\login\page.tsx
+  1:0  error  Parsing error: Declaration or statement expected
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\blogs\route.ts
+  11:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  61:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  73:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\brands\route.ts
+   8:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\contact\route.ts
+  10:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\faqs\route.ts
+   9:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  27:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  59:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\navigation\route.ts
+  18:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  76:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\pages\route.ts
+  15:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  36:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  62:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  77:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\portfolio\route.ts
+  11:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  49:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  61:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\sections\route.ts
+   16:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   44:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   73:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   91:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  105:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\services\route.ts
+  11:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  49:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  54:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  67:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\settings\route.ts
+  11:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  14:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  24:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  45:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\team\route.ts
+   8:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  43:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\admin\testimonials\route.ts
+   9:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  57:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\app\api\auth\[...nextauth]\route.ts
+  39:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\components\admin\admin-header.tsx
+  18:3  warning  'DropdownMenuLabel' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\admin-sidebar.tsx
+  16:3   warning  'Menu' is defined but never used    @typescript-eslint/no-unused-vars
+  22:3   warning  'Layers' is defined but never used  @typescript-eslint/no-unused-vars
+  23:3   warning  'Search' is defined but never used  @typescript-eslint/no-unused-vars
+  24:3   warning  'Plus' is defined but never used    @typescript-eslint/no-unused-vars
+  25:3   warning  'Bell' is defined but never used    @typescript-eslint/no-unused-vars
+  37:10  warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\command-palette.tsx
+  16:3  warning  'Calculator' is defined but never used   @typescript-eslint/no-unused-vars
+  17:3  warning  'Calendar' is defined but never used     @typescript-eslint/no-unused-vars
+  18:3  warning  'CreditCard' is defined but never used   @typescript-eslint/no-unused-vars
+  20:3  warning  'Smile' is defined but never used        @typescript-eslint/no-unused-vars
+  22:3  warning  'Search' is defined but never used       @typescript-eslint/no-unused-vars
+  23:3  warning  'Plus' is defined but never used         @typescript-eslint/no-unused-vars
+  26:3  warning  'Users' is defined but never used        @typescript-eslint/no-unused-vars
+  32:3  warning  'Star' is defined but never used         @typescript-eslint/no-unused-vars
+  34:3  warning  'ImageIcon' is defined but never used    @typescript-eslint/no-unused-vars
+  35:3  warning  'Mail' is defined but never used         @typescript-eslint/no-unused-vars
+  36:3  warning  'ShieldCheck' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\crud-page.tsx
+    4:29  warning  'CardHeader' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+    4:41  warning  'CardTitle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+    4:52  warning  'CardDescription' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   27:55  warning  'MoreHorizontal' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   29:10  warning  'Badge' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   31:3   warning  'DropdownMenu' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+   32:3   warning  'DropdownMenuContent' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   33:3   warning  'DropdownMenuItem' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   34:3   warning  'DropdownMenuLabel' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   35:3   warning  'DropdownMenuSeparator' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   36:3   warning  'DropdownMenuTrigger' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   47:22  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   47:33  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   55:21  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   67:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   70:42  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+   83:14  warning  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   91:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\components\admin\crud-page.tsx:91:5
+  89 |
+  90 |   useEffect(() => {
+> 91 |     loadItems();
+     |     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  92 |   }, [apiEndpoint]);
+  93 |
+  94 |   const handleCreate = () => {  react-hooks/set-state-in-effect
+   92:6   warning  React Hook useEffect has a missing dependency: 'loadItems'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react-hooks/exhaustive-deps
+  100:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+  116:14  warning  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  141:14  warning  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\page-builder.tsx
+  105:44  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-explicit-any
+  124:46  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-explicit-any
+  135:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\components\admin\page-builder.tsx:135:17
+  133 |
+  134 |   useEffect(() => {
+> 135 |     if (pageId) loadData();
+      |                 ^^^^^^^^ Avoid calling setState() directly within an effect
+  136 |   }, [pageId, loadData]);
+  137 |
+  138 |   const handleDragEnd = useCallback(async (event: DragEndEvent) => {  react-hooks/set-state-in-effect
+  188:50  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-explicit-any
+  278:10  error  'Card' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react/jsx-no-undef
+  279:12  error  'CardHeader' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react/jsx-no-undef
+  282:18  error  'Settings' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react/jsx-no-undef
+  285:18  error  'CardTitle' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react/jsx-no-undef
+  286:18  error  'CardDescription' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react/jsx-no-undef
+  290:12  error  'CardContent' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+  370:16  error  'Layout' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react/jsx-no-undef
+
+E:\XiomTech\XiomTech_v3\client\components\admin\rich-text-editor-inner.tsx
+  15:3  warning  'CodeToggle' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\section-card.tsx
+   7:3   warning  'Eye' is defined but never used           @typescript-eslint/no-unused-vars
+   8:3   warning  'EyeOff' is defined but never used        @typescript-eslint/no-unused-vars
+  11:3   warning  'ChevronDown' is defined but never used   @typescript-eslint/no-unused-vars
+  12:3   warning  'ChevronUp' is defined but never used     @typescript-eslint/no-unused-vars
+  26:31  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:12  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:21  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:3   warning  'isEditing' is defined but never used     @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\admin\section-editor.tsx
+  22:12  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  25:21  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  29:44  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  34:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\components\admin\section-editor.tsx:34:7
+  32 |   useEffect(() => {
+  33 |     if (section) {
+> 34 |       setFormData({ ...section });
+     |       ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  35 |     }
+  36 |   }, [section]);
+  37 |  react-hooks/set-state-in-effect
+  46:14  warning  'error' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\features\about\AboutHero.tsx
+  39:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  69:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\components\features\about\BrandSwiper.tsx
+  43:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\components\features\about\HistoryCarousel.tsx
+  65:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  90:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\components\features\about\WhyChooseUs.tsx
+   4:8   warning  'Link' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   5:24  warning  'Users' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  34:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  77:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+E:\XiomTech\XiomTech_v3\client\components\features\home\DevelopmentProcessSection.tsx
+   6:10  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+   6:21  warning  'useRef' is defined but never used     @typescript-eslint/no-unused-vars
+   6:29  warning  'useState' is defined but never used   @typescript-eslint/no-unused-vars
+  55:27  warning  'i' is defined but never used          @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\features\home\HeroBanner.tsx
+  50:26  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  53:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\components\features\home\HeroBanner.tsx:53:5
+  51 |
+  52 |   useEffect(() => {
+> 53 |     setMounted(true);
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  54 |     let ctx: { revert: () => void } | null = null;
+  55 |     (async () => {
+  56 |       const { default: gsap } = await import("gsap");  react-hooks/set-state-in-effect
+  68:33  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  76:40  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+
+E:\XiomTech\XiomTech_v3\client\components\features\home\WhatWeDoSection.tsx
+  128:23  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  128:41  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+E:\XiomTech\XiomTech_v3\client\components\shared\Breadcrumb.tsx
+  13:55  warning  'bgImage' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\shared\PageWrapper.tsx
+  16:9   warning  'isLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  27:18  warning  'time' is defined but never used                @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\ui\HoverImage.tsx
+  19:3  warning  'image1' is defined but never used                      @typescript-eslint/no-unused-vars
+  20:3  warning  'image2' is defined but never used                      @typescript-eslint/no-unused-vars
+  21:3  warning  'width' is assigned a value but never used              @typescript-eslint/no-unused-vars
+  22:3  warning  'height' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  23:3  warning  'intensity' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  25:3  warning  'displacementImage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+E:\XiomTech\XiomTech_v3\client\components\ui\carousel.tsx
+  98:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+E:\XiomTech\XiomTech_v3\client\components\ui\carousel.tsx:98:5
+   96 |   React.useEffect(() => {
+   97 |     if (!api) return
+>  98 |     onSelect(api)
+      |     ^^^^^^^^ Avoid calling setState() directly within an effect
+   99 |     api.on("reInit", onSelect)
+  100 |     api.on("select", onSelect)
+  101 |  react-hooks/set-state-in-effect
+
+E:\XiomTech\XiomTech_v3\client\components\ui\sidebar.tsx
+  611:26  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+E:\XiomTech\XiomTech_v3\client\components\ui\sidebar.tsx:611:26
+  609 |   // Random width between 50 to 90%.
+  610 |   const width = React.useMemo(() => {
+> 611 |     return `${Math.floor(Math.random() * 40) + 50}%`
+      |                          ^^^^^^^^^^^^^ Cannot call impure function
+  612 |   }, [])
+  613 |
+  614 |   return (  react-hooks/purity
+
+Γ£û 208 problems (120 errors, 88 warnings)
+

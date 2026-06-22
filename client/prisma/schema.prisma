@@ -1,0 +1,283 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+datasource db {
+  provider = "postgresql"
+}
+
+// ── Homepage section config (hero, whatwedo, contact, etc.) ──────
+model SiteSection {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  data      String   @db.Text
+  updatedAt DateTime @updatedAt
+}
+
+// ── Services ─────────────────────────────────────────────────────
+model Service {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  shortDesc   String   @default("")
+  description String   @db.Text
+  icon        String?
+  iconBg      String?  // hex color for icon background, e.g. "#3B82F6"
+  image       String?
+  bgImage     String?
+  features    String?  @db.Text  // JSON: [{title, content}]
+  approachSteps String? @db.Text // JSON: [{title, desc}] — detail page “strategic approach”
+  metaTitle   String?
+  metaDescription String? @db.Text
+  metaKeywords    String?
+  canonicalPath   String?
+  ogImage         String?
+  imageAlt        String?
+  bgImageAlt      String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Portfolio / Case Studies ──────────────────────────────────────
+model Portfolio {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String   @default("")
+  content     String?  @db.Text
+  category    String?
+  client      String?
+  date        String?
+  image       String?
+  gallery     String?  @db.Text  // JSON: [{url, alt}] or legacy string URLs
+  outcomeStats String? @db.Text // JSON: [{ value, label }] — e.g. “99% / Efficiency”
+  liveUrl     String?
+  isFeatured  Boolean  @default(false)
+  metaTitle   String?
+  metaDescription String? @db.Text
+  metaKeywords    String?
+  canonicalPath   String?
+  ogImage         String?
+  imageAlt        String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Blog Posts ────────────────────────────────────────────────────
+model BlogPost {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  excerpt     String   @default("")
+  content     String   @db.Text
+  image       String?
+  author      String   @default("Admin")
+  category    String   @default("General")
+  isPublished Boolean  @default(true)
+  publishedAt DateTime @default(now())
+  metaTitle   String?
+  metaDescription String? @db.Text
+  metaKeywords    String?
+  canonicalPath   String?
+  ogImage         String?
+  imageAlt        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Products ──────────────────────────────────────────────────────
+model Product {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String   @default("")
+  content     String?  @db.Text
+  price       String   @default("Contact for Pricing")
+  category    String?
+  image       String?
+  gallery     String?  @db.Text // JSON: [{url, alt}] — detail thumbnails
+  features    String?  @db.Text  // JSON: [{title, content}]
+  isFeatured  Boolean  @default(false)
+  metaTitle   String?
+  metaDescription String? @db.Text
+  metaKeywords    String?
+  canonicalPath   String?
+  ogImage         String?
+  imageAlt        String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Team Members ──────────────────────────────────────────────────
+model TeamMember {
+  id        String   @id @default(cuid())
+  name      String
+  title     String?
+  bio       String?
+  avatar    String?
+  email     String?
+  linkedin  String?
+  twitter   String?
+  facebook  String?
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ── Testimonials ──────────────────────────────────────────────────
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  text      String   @db.Text
+  rating    Int      @default(5)
+  image     String?
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ── FAQs ──────────────────────────────────────────────────────────
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String   @db.Text
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ── Technologies ──────────────────────────────────────────────────
+model Technology {
+  id        String   @id @default(cuid())
+  name      String
+  icon      String?
+  category  String   @default("all")
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ── Guest post pitches (write for us) ─────────────────────────────
+model GuestPostSubmission {
+  id              String   @id @default(cuid())
+  authorName      String
+  authorEmail     String
+  authorBio       String?  @db.Text
+  title           String
+  excerpt         String   @db.Text
+  content         String   @db.Text
+  category        String   @default("General")
+  suggestedImage  String?
+  status          String   @default("pending") // pending | approved | rejected | published
+  adminNotes      String?  @db.Text
+  blogPostId      String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// ── Contact Submissions ───────────────────────────────────────────
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  firstName String
+  lastName  String
+  email     String
+  phone     String?
+  service   String?
+  message   String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// ── Header Configuration ───────────────────────────────────────────
+model HeaderConfig {
+  id        String   @id @default(cuid())
+  brandPrefix String @default("Web")
+  brandSuffix String @default("Xprt")
+  brandHref  String @default("/")
+  phone      String @default("")
+  email      String @default("")
+  ctaLabel   String @default("Let's Connect")
+  ctaHref    String @default("/contact")
+  navItems   String @db.Text // JSON: [{label, href, children?: [{label, href}]}]
+  socialLinks String @db.Text // JSON: [{label, href, icon}]
+  isActive   Boolean @default(true)
+  updatedAt  DateTime @updatedAt
+}
+
+// ── Footer Configuration ───────────────────────────────────────────
+model FooterConfig {
+  id           String   @id @default(cuid())
+  ctaTitle     String   @db.Text
+  ctaButtonLabel String @default("Free Consultation")
+  ctaButtonHref String @default("/contact")
+  mapImage     String?
+  locations    String   @db.Text // JSON: [string]
+  footerLinks  String   @db.Text // JSON: [{sub, label, href}]
+  contactCta   String   @db.Text // JSON: {eyebrow, label, href}
+  socialLinks  String   @db.Text // JSON: [{label, href}]
+  copyrightBrand String @default("pikonox")
+  copyrightText  String @default("All Rights Reserved")
+  isActive      Boolean @default(true)
+  updatedAt    DateTime @updatedAt
+}
+
+// ── Capabilities / What We Do ───────────────────────────────────────
+model Capability {
+  id          String   @id @default(cuid())
+  badge        String   @default("Our Capabilities")
+  headingPrefix String @default("pikonox is a premium")
+  highlight1  String   @default("AI Transformation")
+  highlight2  String   @default("Digital Solutions")
+  headingSuffix String @default("agency.")
+  items        String   @db.Text // JSON: [{title, description, caption, image, imageHover}]
+  order        Int      @default(0)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Homepage Sections ─────────────────────────────────────────────
+model HomepageSection {
+  id          String   @id @default(cuid())
+  sectionKey  String   @unique // hero, services, techstack, testimonials, blog, team, about, faq, process, consultation
+  title       String?
+  subtitle    String?
+  description String?  @db.Text
+  content     String?  @db.Text // JSON for section-specific data
+  image       String?
+  bgImage     String?
+  ctaLabel    String?
+  ctaHref     String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ── Page Configuration (SEO + CTA for static pages) ───────────────
+model PageConfig {
+  id              String   @id @default(cuid())
+  pageKey         String   @unique // work, blog, about, team, faq, contact, services, products
+  metaTitle       String?
+  metaDescription String?  @db.Text
+  metaKeywords    String?
+  ogImage         String?
+  breadcrumbTitle String?
+  breadcrumbSubtitle String? @db.Text
+  ctaTitle        String?  @db.Text
+  ctaDescription  String?  @db.Text
+  ctaButtonLabel  String?
+  ctaButtonHref   String?
+  isActive        Boolean  @default(true)
+  updatedAt       DateTime @updatedAt
+}

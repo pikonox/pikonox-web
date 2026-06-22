@@ -1,0 +1,17 @@
+{
+  "metaTitle": "PikoNox - Business Consulting & Digital Solutions",
+  "metaDescription": "PikoNox helps ambitious businesses scale with modern software, cloud infrastructure, AI transformation, and strategic digital execution.",
+  "metaKeywords": "business consulting, digital solutions, ai transformation, cloud infrastructure, software development",
+  "sections": [
+    { "type": "hero", "enabled": true, "key": "hero" },
+    { "type": "whatWeDo", "enabled": true, "key": "whatwedo" },
+    { "type": "about", "enabled": true, "key": "home-about" },
+    { "type": "services", "enabled": true },
+    { "type": "techStack", "enabled": true, "key": "home-techstack" },
+    { "type": "devProcess", "enabled": true, "key": "home-devprocess" },
+    { "type": "faq", "enabled": true },
+    { "type": "testimonials", "enabled": true },
+    { "type": "consultation", "enabled": true, "key": "contact" },
+    { "type": "blog", "enabled": true }
+  ]
+}

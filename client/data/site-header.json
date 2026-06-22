@@ -1,0 +1,59 @@
+{
+  "brand": {
+    "prefix": "Web",
+    "suffix": "Xprt",
+    "href": "/"
+  },
+  "contact": {
+    "phone": "+1 (123) 456-78-90",
+    "email": "info@pikonox.com"
+  },
+  "cta": {
+    "label": "Let's Connect",
+    "href": "/contact"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    {
+      "label": "Company",
+      "href": "#",
+      "children": [
+        { "label": "About Us", "href": "/about" },
+        { "label": "Our Team", "href": "/team" },
+        { "label": "FAQs", "href": "/faq" }
+      ]
+    },
+    {
+      "label": "Services",
+      "href": "/services",
+      "children": [
+        { "label": "All Services", "href": "/services" },
+        { "label": "Cloud Infrastructure", "href": "/services/cloud-infrastructure" },
+        { "label": "AI & ML", "href": "/services/ai-ml-solutions" }
+      ]
+    },
+    {
+      "label": "Products",
+      "href": "/products",
+      "children": [
+        { "label": "All Products", "href": "/products" }
+      ]
+    },
+    {
+      "label": "Resources",
+      "href": "#",
+      "children": [
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Case Studies", "href": "/work" },
+        { "label": "Write for us", "href": "/guest-post" }
+      ]
+    },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "socialLinks": [
+    { "label": "Facebook", "href": "https://www.facebook.com", "icon": "facebook" },
+    { "label": "Instagram", "href": "https://www.instagram.com", "icon": "instagram" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com", "icon": "linkedin" },
+    { "label": "X", "href": "https://twitter.com", "icon": "x" }
+  ]
+}

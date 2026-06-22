@@ -1,0 +1,10 @@
+{
+  "metaTitle": "FAQs | PikoNox - Common Questions",
+  "metaDescription": "Find answers to frequently asked questions about PikoNox's services and processes.",
+  "metaKeywords": "faq, questions, support",
+  "breadcrumb": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Have questions? We have answers. Explore our FAQ section to learn more about how we work and what we can do for your business."
+  },
+  "layout": ["faq", "consultation"]
+}

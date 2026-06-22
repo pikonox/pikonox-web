@@ -1,0 +1,25 @@
+{
+  "heading": "Meet Your Technology\nPartner in Growth",
+  "subheading": "With over a decade of experience helping forward-thinking enterprises unlock digital value. Whether you're just starting out or scaling fast, our expert tech teams are here to guide every step with scalable AI solutions.",
+  "features": [
+    "Expert tech consulting",
+    "Comprehensive AI solutions",
+    "Client-centric development",
+    "Proactive infrastructure management"
+  ],
+  "imageUrl": "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=1000",
+  "imageAlt": "Technology partner meeting",
+  "avatarUrls": [
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+  ],
+  "teamCardTitle": "Introducing Our Architecture Experts",
+  "teamIntroSuffix": "+",
+  "teamIntroLabel": "Engineers",
+  "linkLabel": "More about us",
+  "linkHref": "/about",
+  "statEfficiency": 99.9,
+  "statGrowth": 10,
+  "statMembers": 25
+}

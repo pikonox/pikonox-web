@@ -1,0 +1,36 @@
+{
+  "heading": "Our Services",
+  "subheading": "Discover our comprehensive suite of advanced digital & AI solutions tailored for your growth.",
+  "items": [
+    {
+      "title": "Best Mobile App Development Company",
+      "description": "We are a leading mobile app development company that provides Android & iPhone solutions built for performance and scale.",
+      "bgImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1920&q=80"
+    },
+    {
+      "title": "AI Transformation Service",
+      "description": "Empowering businesses to harness the full potential of AI for smarter, faster, and future-ready operations.",
+      "bgImage": "https://www.testim.io/wp-content/uploads/2024/02/power_of_ai_blog.jpg"
+    },
+    {
+      "title": "Ecommerce Website Design",
+      "description": "We offer premium e-commerce website design solutions. Our professional and dedicated e-commerce team converts visitors into buyers.",
+      "bgImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
+    },
+    {
+      "title": "Website Design and Development",
+      "description": "We provide cost-competitive website design and development solutions to startups, SMEs and enterprise businesses.",
+      "bgImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80"
+    },
+    {
+      "title": "CMS & Platform Development",
+      "description": "We are a registered partner for leading CMS platforms. With our expertise we deliver powerful and scalable content management solutions.",
+      "bgImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+    },
+    {
+      "title": "Cloud Hosting & Maintenance",
+      "description": "Secure, scalable, and expertly managed cloud infrastructure to power your business — backed by 24/7 monitoring and support.",
+      "bgImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+    }
+  ]
+}

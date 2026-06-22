@@ -1,0 +1,27 @@
+{
+  "ribbon": "Our Legacy",
+  "title": "Our Journey Through Time",
+  "thumbYears": ["2020", "2022"],
+  "slides": [
+    {
+      "thumbYear": "2020",
+      "badge": "Established 2020",
+      "title": "The Beginning of Innovation",
+      "body": "Our story began in a small co-working space with a big dream: to revolutionize the creative landscape. Armed with passion and fresh ideas, we launched our first campaign, earning our first major client within months.",
+      "image": "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/about-us/pic9.png",
+      "imageAlt": "Early team workspace",
+      "ctaLabel": "Join Our Journey",
+      "ctaHref": "/team"
+    },
+    {
+      "thumbYear": "2022",
+      "badge": "Growth Phase 2022",
+      "title": "The Strategic Spark",
+      "body": "We spearheaded a digital revolution, embracing cutting-edge analytical tools. This year marked our transition into a full-fledged modern consulting powerhouse, scaling fast.",
+      "image": "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/about-us/pic10.png",
+      "imageAlt": "Growing team collaboration",
+      "ctaLabel": "Explore More",
+      "ctaHref": "/team"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "metaTitle": "Built by XiomTech",
+  "metaDescription": "This website was designed and developed by XiomTech — a digital agency by Mh Miyad.",
+  "metaKeywords": "xiomtech, built by, web development, nextjs agency",
+  "noIndex": true,
+  "badge": "Powered by XiomTech",
+  "brandPrefix": "Xiom",
+  "brandHighlight": "Tech",
+  "tagline": "Digital Solutions Agency",
+  "description": "This website was designed, developed, and deployed by XiomTech — a full-stack digital agency specializing in modern web experiences, AI-driven products, and scalable software solutions.",
+  "stackDescription": "Built with Next.js 16, Tailwind CSS v4, Prisma ORM, and PostgreSQL. Deployed on a private VPS with zero-downtime CI/CD.",
+  "developer": {
+    "name": "Mh Miyad",
+    "role": "Founder & Lead Engineer · XiomTech",
+    "initials": "M",
+    "github": "https://github.com/mh-miyad",
+    "email": "mhmiyad6565@gmail.com"
+  },
+  "techStack": [
+    "Next.js 16",
+    "TypeScript",
+    "Prisma 7",
+    "PostgreSQL",
+    "Tailwind v4",
+    "TipTap",
+    "Sharp",
+    "Bun"
+  ],
+  "primaryCta": {
+    "label": "View GitHub Profile",
+    "href": "https://github.com/mh-miyad"
+  },
+  "secondaryCta": {
+    "label": "Back to Website",
+    "href": "/"
+  },
+  "footerNote": "This page is intentionally set to no-index."
+}

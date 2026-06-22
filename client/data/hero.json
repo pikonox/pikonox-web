@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {
+      "badge": "Take Charge of Your Business",
+      "headline": "Proven consulting strategies for modern global enterprises.",
+      "description": "We deliver strategic insights and innovative solutions that empower forward-thinking organizations to scale gracefully, optimize operations, and achieve sustainable growth in a highly competitive digital landscape."
+    },
+    {
+      "badge": "Innovative Solutions",
+      "headline": "Transforming visionary ideas into digital reality today.",
+      "description": "Our expert technical team leverages cutting-edge technology and intelligent insights to build robust, scalable applications that drive operational efficiency and elevate your user experience across all platforms."
+    },
+    {
+      "badge": "Global Reach",
+      "headline": "Expanding your business horizons across borders seamlessly.",
+      "description": "Break down global geographic barriers with our comprehensive connectivity solutions. We connect your enterprise to international markets through culturally resonant, data-driven, and forward-looking digital strategies."
+    }
+  ],
+  "stats": [
+    { "value": "1M", "label": "Overall Positive Customer Feedback" },
+    { "value": "18+", "label": "Industrial Years of Experiences" }
+  ],
+  "bgVideoId": "ahy5o5nT4oI",
+  "videoUrl": "https://www.youtube.com/embed/tVphpcFHGaI",
+  "socialLinks": [
+    { "label": "Instagram", "href": "https://www.instagram.com", "icon": "fa-brands fa-instagram" },
+    { "label": "Facebook", "href": "https://www.facebook.com", "icon": "fa-brands fa-facebook-f" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com", "icon": "fa-brands fa-linkedin-in" },
+    { "label": "Twitter", "href": "https://www.x.com", "icon": "fa-brands fa-x-twitter" }
+  ]
+}

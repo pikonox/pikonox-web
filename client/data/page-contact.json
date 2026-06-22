@@ -1,0 +1,12 @@
+{
+  "metaTitle": "Contact Us | PikoNox - Get In Touch",
+  "metaDescription": "Contact PikoNox for inquiries about services, consultations, or support.",
+  "metaKeywords": "contact, support, consulting",
+  "breadcrumb": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to transform your business? Let's discuss your next project and see how our expert tech teams can help you unlock digital value."
+  },
+  "sidebarHeadingHtml": "Reach Out to the <br class=\"hidden sm:block\"/> <span class=\"text-primary underline decoration-blue-200 underline-offset-8\">Experts</span> Today",
+  "sidebarBody": "We're committed to providing the highest level of service. Whether you have a specific project in mind or just want to explore possibilities, we're here for you.",
+  "formTitle": "Send us a Message"
+}

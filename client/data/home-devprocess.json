@@ -1,0 +1,54 @@
+{
+  "sidebarHeading": "Our Process:\nAI-Optimized,\nTransparent, Scalable",
+  "sidebarSub": "We blend human expertise with AI precision—delivering faster outcomes without compromising security.",
+  "ctaLabel": "Schedule a Call",
+  "ctaHref": "/contact",
+  "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+  "imageAlt": "Team collaborating on AI development",
+  "steps": [
+    {
+      "icon": "BrainCircuit",
+      "step": "Step 1",
+      "subtitle": "AI-Powered Discovery Audit",
+      "title": "Zero-risk assessment, tailored roadmap",
+      "bullets": [
+        "Free 60-min strategy session to analyze your tech stack",
+        "AI-driven scoping tool estimates time/cost savings",
+        "Receive a GDPR/ISO 2701-compliant project blueprint"
+      ]
+    },
+    {
+      "icon": "Network",
+      "step": "Step 2",
+      "subtitle": "Hybrid Team Onboarding",
+      "title": "Right talent + AI tools from day one",
+      "bullets": [
+        "Match with vetted engineers (800+ experts)",
+        "AI-augmented sprint planning for 30% faster kickoff",
+        "Dedicated PM + automated progress dashboards"
+      ]
+    },
+    {
+      "icon": "ShieldCheck",
+      "step": "Step 3",
+      "subtitle": "Build with AI Guardrails",
+      "title": "Code, test, deploy—smarter",
+      "bullets": [
+        "AI pair-programming assistants (70% faster dev)",
+        "Self-healing test suites (99.9% reliability)",
+        "Real-time compliance checks (ISO 27001 baked in)"
+      ]
+    },
+    {
+      "icon": "Rocket",
+      "step": "Step 4",
+      "subtitle": "Scale with Confidence",
+      "title": "Your growth, automated",
+      "bullets": [
+        "AI-optimized cloud deployment",
+        "Continuous performance monitoring + predictive scaling",
+        "90-day post-launch support with AI-driven analytics"
+      ]
+    }
+  ]
+}
