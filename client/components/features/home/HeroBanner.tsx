@@ -160,7 +160,7 @@ export default function HeroBanner({ data }: { data?: HeroData }) {
                 
                 {/* Slide Content */}
                 <div className="container mx-auto relative z-10 h-full flex flex-col">
-                  <div className="pt-[100px] lg:pt-[130px] flex-1 pb-24">
+                  <div className="pt-[100px] lg:pt-[105px] flex-1 pb-24">
                     <div className="text-center">
                       <div>
                         <div className="mb-0 relative inline-block max-w-[1000px] mx-auto">
