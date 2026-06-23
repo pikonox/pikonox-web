@@ -84,19 +84,6 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
               {/* Contact item */}
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-2xl bg-white shadow-md shadow-gray-200/50 flex items-center justify-center shrink-0 border border-gray-50">
-                  <Phone className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold text-secondary/50 uppercase tracking-wider mb-1">Call Us Directly</h4>
-                  <a href={`tel:${data?.phone ?? "+11234567890"}`} className="text-xl font-bold text-secondary hover:text-primary transition-colors">
-                    {data?.phone ?? "+1 (123) 456-7890"}
-                  </a>
-                </div>
-              </div>
-              
-              {/* Contact item */}
-              <div className="flex items-start gap-5">
-                <div className="w-12 h-12 rounded-2xl bg-white shadow-md shadow-gray-200/50 flex items-center justify-center shrink-0 border border-gray-50">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -115,7 +102,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                 <div>
                   <h4 className="text-sm font-semibold text-secondary/50 uppercase tracking-wider mb-1">Global Headquarters</h4>
                   <p className="text-xl font-bold text-secondary">
-                    {data?.address ?? "Silicon Valley, CA"}
+                    {data?.address ?? "Punjab, Pakistan"}
                   </p>
                 </div>
               </div>
@@ -140,7 +127,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                       onChange={handleChange}
                       placeholder="John"
                       required
-                      className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
+                      className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
                     />
                   </div>
                   <div>
@@ -152,7 +139,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                       onChange={handleChange}
                       placeholder="Doe"
                       required
-                      className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
+                      className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
                     />
                   </div>
                 </div>
@@ -167,7 +154,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                       onChange={handleChange}
                       placeholder="john@company.com"
                       required
-                      className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
+                      className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
                     />
                   </div>
                   <div>
@@ -178,7 +165,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+1 (555) 000-0000"
-                      className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
+                      className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium shadow-sm"
                     />
                   </div>
                 </div>
@@ -191,7 +178,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                       value={formData.service}
                       onChange={handleChange}
                       required
-                      className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium appearance-none cursor-pointer shadow-sm"
+                      className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium appearance-none cursor-pointer shadow-sm"
                     >
                       <option value="" disabled>Select a service...</option>
                       {services.map((service) => (
@@ -214,7 +201,7 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                     onChange={handleChange}
                     placeholder="Tell us a little bit about what you're trying to build..."
                     rows={4}
-                    className="w-full py-2.5 px-4 rounded-lg border border-gray-200 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium resize-none shadow-sm"
+                    className="w-full py-2.5 px-4 rounded-lg border border-slate-300 bg-white text-secondary placeholder:text-gray-400 outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all font-medium resize-none shadow-sm"
                   />
                 </div>
 

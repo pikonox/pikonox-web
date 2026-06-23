@@ -40,7 +40,7 @@ async function upsertSection(key: string, data: object) {
 }
 
 async function main() {
-  console.log("🌱 Seeding WebXPT database...\n");
+  console.log("🌱 Seeding PikoNox database...\n");
 
   // ─── Hero Section ───────────────────────────────────────────────────────────
   await upsertSection("hero", {
@@ -48,7 +48,7 @@ async function main() {
       {
         badge: "Award-Winning Digital Agency",
         headline: "We Build Digital Experiences That Drive Real Results.",
-        description: "From strategy to execution, WebXPT crafts powerful web & mobile solutions that help businesses grow, scale, and succeed in the digital age.",
+        description: "From strategy to execution, PikoNox crafts powerful web & mobile solutions that help businesses grow, scale, and succeed in the digital age.",
       },
       {
         badge: "Trusted by 200+ Clients Worldwide",
@@ -79,7 +79,7 @@ async function main() {
   // ─── What We Do ─────────────────────────────────────────────────────────────
   await upsertSection("whatwedo", {
     badge: "Our Capabilities",
-    headingPrefix: "WebXPT is a premium",
+    headingPrefix: "PikoNox is a premium",
     highlight1: "AI Transformation",
     highlight2: "Digital Solutions",
     headingSuffix: "agency.",
@@ -113,9 +113,9 @@ async function main() {
   await upsertSection("contact", {
     heading: "Ready to Accelerate Your Growth?",
     description: "Whether you need elite AI engineering, robust cloud infrastructure, or a dedicated software team — our experts are ready to deliver.",
-    phone: "+1 (123) 456-7890",
+    phone: "",
     email: "contact@pikonox.com",
-    address: "Silicon Valley, CA — Remote Worldwide",
+    address: "Punjab, Pakistan",
     services: [
       "AI & Machine Learning",
       "Cloud Infrastructure",
@@ -155,17 +155,17 @@ async function main() {
     {
       key: "page-about",
       data: {
-        metaTitle: "About WebXPT — AI-Powered Digital Agency",
-        metaDescription: "Learn about WebXPT's mission, team, and story. We build cutting-edge software, AI solutions, and digital products for ambitious businesses worldwide.",
-        metaKeywords: "about WebXPT, digital agency, AI development team, software company",
+        metaTitle: "About PikoNox — AI-Powered Digital Agency",
+        metaDescription: "Learn about PikoNox's mission, team, and story. We build cutting-edge software, AI solutions, and digital products for ambitious businesses worldwide.",
+        metaKeywords: "about PikoNox, digital agency, AI development team, software company",
         breadcrumb: { title: "About Our Agency", subtitle: "A team obsessed with building technology that makes a real difference." },
       },
     },
     {
       key: "page-services",
       data: {
-        metaTitle: "Our Services — WebXPT Digital Agency",
-        metaDescription: "Explore WebXPT's full range of services: AI development, mobile apps, ecommerce, cloud infrastructure, and more. Built for scale.",
+        metaTitle: "Our Services — PikoNox Digital Agency",
+        metaDescription: "Explore PikoNox's full range of services: AI development, mobile apps, ecommerce, cloud infrastructure, and more. Built for scale.",
         metaKeywords: "web development services, AI development, mobile app development, cloud solutions",
         breadcrumb: { title: "Our Services", subtitle: "End-to-end digital services that help your business grow, scale, and lead." },
       },
@@ -173,16 +173,16 @@ async function main() {
     {
       key: "seo-services",
       data: {
-        metaTitle: "Our Services — WebXPT Digital Agency",
-        metaDescription: "Explore WebXPT's full range of services: AI development, mobile apps, ecommerce, cloud infrastructure, and more.",
+        metaTitle: "Our Services — PikoNox Digital Agency",
+        metaDescription: "Explore PikoNox's full range of services: AI development, mobile apps, ecommerce, cloud infrastructure, and more.",
         metaKeywords: "web development services, AI development, mobile app development, cloud solutions",
       },
     },
     {
       key: "page-products",
       data: {
-        metaTitle: "Products — WebXPT",
-        metaDescription: "Discover WebXPT's range of digital products — from UI component libraries to SaaS starter kits.",
+        metaTitle: "Products — PikoNox",
+        metaDescription: "Discover PikoNox's range of digital products — from UI component libraries to SaaS starter kits.",
         metaKeywords: "digital products, SaaS starter kit, UI library, Next.js boilerplate",
         breadcrumb: { title: "Our Products", subtitle: "Ship faster with our battle-tested digital products and starter kits." },
       },
@@ -190,16 +190,16 @@ async function main() {
     {
       key: "seo-products",
       data: {
-        metaTitle: "Products — WebXPT",
-        metaDescription: "Discover WebXPT's range of digital products — from UI component libraries to SaaS starter kits.",
+        metaTitle: "Products — PikoNox",
+        metaDescription: "Discover PikoNox's range of digital products — from UI component libraries to SaaS starter kits.",
         metaKeywords: "digital products, SaaS starter kit, UI library, Next.js boilerplate",
       },
     },
     {
       key: "page-work",
       data: {
-        metaTitle: "Our Work & Case Studies — WebXPT",
-        metaDescription: "Explore WebXPT's portfolio of successful projects — e-commerce platforms, mobile apps, AI tools, and enterprise software.",
+        metaTitle: "Our Work & Case Studies — PikoNox",
+        metaDescription: "Explore PikoNox's portfolio of successful projects — e-commerce platforms, mobile apps, AI tools, and enterprise software.",
         metaKeywords: "portfolio, case studies, web development projects, digital agency work",
         breadcrumb: { title: "Our Work", subtitle: "A showcase of our most impactful projects and the results we delivered." },
       },
@@ -207,60 +207,60 @@ async function main() {
     {
       key: "seo-work",
       data: {
-        metaTitle: "Our Work & Case Studies — WebXPT",
-        metaDescription: "Explore WebXPT's portfolio of successful projects — e-commerce, mobile apps, AI tools, and enterprise software.",
+        metaTitle: "Our Work & Case Studies — PikoNox",
+        metaDescription: "Explore PikoNox's portfolio of successful projects — e-commerce, mobile apps, AI tools, and enterprise software.",
         metaKeywords: "portfolio, case studies, web development projects, digital agency work",
       },
     },
     {
       key: "page-blog",
       data: {
-        metaTitle: "Blog & Insights — WebXPT",
-        metaDescription: "Read the latest insights on AI, web development, cloud infrastructure, and digital strategy from the WebXPT team.",
+        metaTitle: "Blog & Insights — PikoNox",
+        metaDescription: "Read the latest insights on AI, web development, cloud infrastructure, and digital strategy from the PikoNox team.",
         metaKeywords: "tech blog, AI insights, web development tips, digital agency blog",
-        breadcrumb: { title: "WebXPT Insights", subtitle: "Thoughts on technology, design, and building great digital products." },
+        breadcrumb: { title: "PikoNox Insights", subtitle: "Thoughts on technology, design, and building great digital products." },
       },
     },
     {
       key: "seo-blog",
       data: {
-        metaTitle: "Blog & Insights — WebXPT",
-        metaDescription: "Read the latest insights on AI, web development, cloud infrastructure, and digital strategy from the WebXPT team.",
+        metaTitle: "Blog & Insights — PikoNox",
+        metaDescription: "Read the latest insights on AI, web development, cloud infrastructure, and digital strategy from the PikoNox team.",
         metaKeywords: "tech blog, AI insights, web development tips, digital agency blog",
       },
     },
     {
       key: "page-team",
       data: {
-        metaTitle: "Meet the Team — WebXPT",
-        metaDescription: "Meet the talented engineers, designers, and strategists behind WebXPT. A global team passionate about exceptional digital products.",
-        metaKeywords: "WebXPT team, software engineers, digital agency team, developers",
+        metaTitle: "Meet the Team — PikoNox",
+        metaDescription: "Meet the talented engineers, designers, and strategists behind PikoNox. A global team passionate about exceptional digital products.",
+        metaKeywords: "PikoNox team, software engineers, digital agency team, developers",
         breadcrumb: { title: "Meet Our Experts", subtitle: "A global team of engineers, designers, and product strategists." },
       },
     },
     {
       key: "page-faq",
       data: {
-        metaTitle: "FAQ — WebXPT Digital Agency",
-        metaDescription: "Answers to the most common questions about working with WebXPT — process, timelines, pricing, and technologies.",
-        metaKeywords: "FAQ, WebXPT questions, how we work, project timelines",
+        metaTitle: "FAQ — PikoNox Digital Agency",
+        metaDescription: "Answers to the most common questions about working with PikoNox — process, timelines, pricing, and technologies.",
+        metaKeywords: "FAQ, PikoNox questions, how we work, project timelines",
         breadcrumb: { title: "Frequently Asked Questions", subtitle: "Everything you need to know before we start building together." },
       },
     },
     {
       key: "page-contact",
       data: {
-        metaTitle: "Contact WebXPT — Let's Build Together",
-        metaDescription: "Ready to start your project? Contact WebXPT for a free consultation. We work with startups, SMEs, and enterprise businesses worldwide.",
-        metaKeywords: "contact WebXPT, free consultation, hire developers, start project",
+        metaTitle: "Contact PikoNox — Let's Build Together",
+        metaDescription: "Ready to start your project? Contact PikoNox for a free consultation. We work with startups, SMEs, and enterprise businesses worldwide.",
+        metaKeywords: "contact PikoNox, free consultation, hire developers, start project",
         breadcrumb: { title: "Get In Touch", subtitle: "Tell us about your project. We'll get back to you within 24 hours." },
       },
     },
     {
       key: "page-home-layout",
       data: {
-        metaTitle: "WebXPT — AI-Powered Digital Agency | Web & Mobile Development",
-        metaDescription: "WebXPT builds world-class web apps, mobile apps, and AI solutions for ambitious businesses. From startup MVPs to enterprise platforms.",
+        metaTitle: "PikoNox — AI-Powered Digital Agency | Web & Mobile Development",
+        metaDescription: "PikoNox builds world-class web apps, mobile apps, and AI solutions for ambitious businesses. From startup MVPs to enterprise platforms.",
         metaKeywords: "digital agency, web development, AI development, mobile apps, SaaS, Next.js agency",
       },
     },
@@ -549,7 +549,7 @@ async function main() {
       title: "10 Web Development Trends Defining 2025",
       excerpt: "From AI-generated interfaces to edge computing — the trends every developer and business leader needs to understand this year.",
       content: "<h2>1. AI-Assisted Development</h2><p>Tools like GitHub Copilot and Cursor are fundamentally changing how developers write code — shifting the role from syntax recall to architectural thinking.</p><h2>2. Edge Computing</h2><p>Deploying logic closer to users is becoming the standard for high-performance applications. Next.js, Vercel Edge Functions, and Cloudflare Workers are leading the charge.</p><h2>3. Generative UI</h2><p>AI that generates interface components on demand is no longer science fiction. We're already shipping production features built with this approach.</p>",
-      author: "WebXPT Team",
+      author: "PikoNox Team",
       category: "Technology",
       isPublished: true,
       image: unsplash("1555066931-4365d14bab8c"),
@@ -558,7 +558,7 @@ async function main() {
       title: "Why Your Business Needs a Mobile-First Strategy in 2025",
       excerpt: "With 65% of web traffic now coming from mobile devices, a mobile-first strategy isn't optional — it's existential.",
       content: "<h2>The Numbers Don't Lie</h2><p>65% of all web traffic, 72% of e-commerce purchases, and 80% of social media browsing happens on mobile. Yet most businesses still design for desktop first.</p><h2>What Mobile-First Actually Means</h2><p>It's not just responsive CSS. Mobile-first means designing for the constraints of a small screen, slow connection, and distracted user — then progressively enhancing for larger viewports.</p>",
-      author: "WebXPT Team",
+      author: "PikoNox Team",
       category: "Business",
       isPublished: true,
       image: unsplash("1512941937669-90a1b58e7e9c"),
@@ -567,7 +567,7 @@ async function main() {
       title: "The Complete Guide to Next.js 15 for Production",
       excerpt: "Everything you need to know about building and shipping production-grade applications with Next.js 15 — from caching to Turbopack.",
       content: "<h2>What Changed in Next.js 15</h2><p>Next.js 15 brings Turbopack as the default bundler, faster local development, and breaking changes to caching behaviour that you need to understand before upgrading.</p><h2>The New Caching Model</h2><p>Fetch requests are no longer cached by default. This is a significant breaking change. Understand the new opt-in caching patterns before migrating.</p>",
-      author: "WebXPT Team",
+      author: "PikoNox Team",
       category: "Development",
       isPublished: true,
       image: unsplash("1498050108023-c5249f4df085"),
@@ -590,21 +590,21 @@ async function main() {
     data: [
       {
         name: "Sarah Johnson",
-        text: "WebXPT transformed our outdated platform into a modern, high-converting experience. Professional, communicative, and delivered well beyond expectations. Our conversion rate tripled.",
+        text: "PikoNox transformed our outdated platform into a modern, high-converting experience. Professional, communicative, and delivered well beyond expectations. Our conversion rate tripled.",
         rating: 5,
         image: unsplash("1438761681033-6461ffad8d80", 400),
         order: 1,
       },
       {
         name: "Michael Chen",
-        text: "Working with WebXPT on our mobile app was an exceptional experience. They understood our vision perfectly and delivered a polished product on time and under budget.",
+        text: "Working with PikoNox on our mobile app was an exceptional experience. They understood our vision perfectly and delivered a polished product on time and under budget.",
         rating: 5,
         image: unsplash("1472099645785-5658abf4ff4e", 400),
         order: 2,
       },
       {
         name: "Emily Rodriguez",
-        text: "The AI integration WebXPT built reduced our customer support tickets by 40%. They're not just developers — they're genuine strategic technology partners.",
+        text: "The AI integration PikoNox built reduced our customer support tickets by 40%. They're not just developers — they're genuine strategic technology partners.",
         rating: 5,
         image: unsplash("1500648767791-00dcc994a43e", 400),
         order: 3,
@@ -617,11 +617,31 @@ async function main() {
   await prisma.fAQ.deleteMany({});
   await prisma.fAQ.createMany({
     data: [
-      { question: "What services does WebXPT offer?", answer: "<p>WebXPT provides AI-driven software development, custom web and mobile apps, digital transformation, cloud infrastructure, and enterprise AI integrations — everything you need to build and scale a world-class digital product.</p>", order: 1 },
-      { question: "How long does a typical project take?", answer: "<p>A typical MVP takes <strong>4–8 weeks</strong>. Complex enterprise systems span 3–6 months. We break work into agile sprints with demos every two weeks so you always know exactly where we are.</p>", order: 2 },
-      { question: "What technologies do you specialise in?", answer: "<p>We specialise in <strong>React, Next.js, Node.js, Python</strong>, and scalable cloud platforms (AWS / GCP / Azure). We also bring deep expertise in LLMs and machine learning to build genuinely AI-powered products.</p>", order: 3 },
-      { question: "How do you protect our IP and data?", answer: "<p>GDPR and ISO 27001 compliance as standard. End-to-end encryption. Rigorous NDA frameworks. Your IP is fully yours — always. We treat your data the way we'd treat our own.</p>", order: 4 },
-      { question: "Do you offer ongoing support after launch?", answer: "<p>Yes — flexible maintenance packages covering bug fixes, performance monitoring, security patches, and new feature development. We're a long-term partner, not a one-off vendor.</p>", order: 5 },
+      { 
+        question: "What services does PikoNox offer as a full stack agency?", 
+        answer: "<p>PikoNox provides end-to-end digital product services: custom web and mobile applications, dedicated tech teams, cloud hosting &amp; infrastructure management, enterprise AI/ML transformation, and modern UI/UX design. We take you from discovery and design to deployment and post-launch scale.</p>", 
+        order: 1 
+      },
+      { 
+        question: "How does PikoNox ensure scalable software architecture?", 
+        answer: "<p>We design and build with modern, battle-tested technologies like <strong>React, Next.js, Node.js, Python, and TypeScript</strong>. By employing containerization (Docker), serverless architectures, and modular API design, we ensure that your software scales efficiently alongside your business growth.</p>", 
+        order: 2 
+      },
+      { 
+        question: "What does your agile development process look like?", 
+        answer: "<p>We work in 2-week sprints with regular milestones and demos. A typical MVP takes <strong>4–8 weeks</strong>, while complex enterprise platforms span 3–6 months. Throughout the build, you have a dedicated product manager and direct communication with our engineering team.</p>", 
+        order: 3 
+      },
+      { 
+        question: "Who owns the intellectual property (IP) and source code?", 
+        answer: "<p>You do. <strong>100% of the IP, design assets, and source code</strong> belong to you from day one. We sign standard NDA agreements before any engagement and provide clean repository handovers upon project completion.</p>", 
+        order: 4 
+      },
+      { 
+        question: "Do you offer post-launch support and server maintenance?", 
+        answer: "<p>Yes, we offer ongoing SLA-backed support and maintenance. Our packages cover proactive 24/7 server monitoring, performance optimization, dependency and security updates, and active rolling updates for new features.</p>", 
+        order: 5 
+      },
     ],
   });
   console.log("✓ FAQs (5)");
@@ -661,9 +681,9 @@ async function main() {
   // ─── Products ───────────────────────────────────────────────────────────────
   const products = [
     {
-      name: "WebXPT UI Pro",
+      name: "PikoNox UI Pro",
       description: "A premium Next.js component library with 200+ production-ready, accessible components built on Tailwind CSS.",
-      content: "<p>WebXPT UI Pro gives your team a head start with beautifully designed, fully accessible React components. Includes dark mode, animations, Storybook docs, and TypeScript-first APIs.</p><ul><li>200+ components</li><li>Dark mode included</li><li>WCAG 2.1 accessible</li><li>Figma design system</li></ul>",
+      content: "<p>PikoNox UI Pro gives your team a head start with beautifully designed, fully accessible React components. Includes dark mode, animations, Storybook docs, and TypeScript-first APIs.</p><ul><li>200+ components</li><li>Dark mode included</li><li>WCAG 2.1 accessible</li><li>Figma design system</li></ul>",
       price: "$149/year",
       category: "UI Library",
       image: unsplash("1555066931-4365d14bab8c"),
@@ -695,10 +715,10 @@ async function main() {
   // ─── Header Config ──────────────────────────────────────────────────────────
   const existingHeader = await prisma.headerConfig.findFirst();
   const headerData = {
-    brandPrefix: "Web",
-    brandSuffix: "Xprt",
+    brandPrefix: "piko",
+    brandSuffix: "Nox",
     brandHref: "/",
-    phone: "+1 (123) 456-7890",
+    phone: "",
     email: "contact@pikonox.com",
     ctaLabel: "Let's Connect",
     ctaHref: "/contact",
@@ -732,7 +752,7 @@ async function main() {
     ctaTitle: "Ready to Build Something Remarkable?",
     ctaButtonLabel: "Start a Project",
     ctaButtonHref: "/contact",
-    locations: JSON.stringify(["Silicon Valley, CA, USA", "Remote — Worldwide"]),
+    locations: JSON.stringify(["Punjab, Pakistan"]),
     footerLinks: JSON.stringify([
       { sub: "What we do", label: "Services", href: "/services" },
       { sub: "Our work", label: "Portfolio", href: "/work" },
@@ -749,7 +769,7 @@ async function main() {
       { label: "Instagram", href: "https://instagram.com" },
       { label: "Twitter", href: "https://x.com" },
     ]),
-    copyrightBrand: "WebXPT",
+    copyrightBrand: "PikoNox",
     copyrightText: "All Rights Reserved",
     isActive: true,
   };

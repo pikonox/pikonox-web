@@ -46,7 +46,6 @@ export default async function Header() {
       href: config?.brandHref || "/",
     },
     contact: {
-      phone: config?.phone || "+1 (123) 456-78-90",
       email: config?.email || "contact@pikonox.com",
     },
     cta: {

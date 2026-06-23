@@ -34,7 +34,7 @@ const DEFAULT_DATA: Required<FooterData> = {
     buttonHref: "/contact",
   },
   mapImage: "/map.svg",
-  locations: ["123 Finance Lane, Growth City, ST 45678 USA"],
+  locations: ["Punjab, Pakistan"],
   footerLinks: [
     { sub: "See our work", label: "Portfolio", href: "/work" },
     { sub: "How we do it", label: "Process", href: "/" },

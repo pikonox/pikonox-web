@@ -6,11 +6,7 @@
   },
   "mapImage": "/map.svg",
   "locations": [
-    "123 Finance Lane, Growth City, ST 45678 USA",
-    "456 Prosperity Avenue, Silicon Valley, CA 94043 USA",
-    "200 Growth Street, Sydney CBD, NSW 2000, Australia",
-    "15 Fintech Road, District 1, Singapore 048583",
-    "42 Wealth Avenue, London E14 5AB, United Kingdom"
+    "Punjab, Pakistan"
   ],
   "footerLinks": [
     { "sub": "See our work", "label": "Portfolio", "href": "/work" },

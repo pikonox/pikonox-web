@@ -6,11 +6,26 @@ import { useEffect, useRef, useState } from "react";
 import { Plus, Minus, ArrowRight, Shield, Zap, Star, Clock } from "lucide-react";
 
 const FAQ_DEFAULTS = [
-  { question: "What services does WebXPT offer?", answer: "WebXPT provides AI-driven software development, custom web and mobile apps, digital transformation, cloud infrastructure, and enterprise AI integrations — everything you need to build and scale a world-class digital product." },
-  { question: "How long does a typical project take?", answer: "A typical MVP takes 4–8 weeks. Complex enterprise systems span 3–6 months. We work in agile sprints for continuous delivery and full visibility at every stage." },
-  { question: "What technologies do you specialize in?", answer: "React, Next.js, Node.js, Python, and scalable cloud platforms (AWS / GCP / Azure). We also bring deep expertise in LLMs and machine learning to build genuinely AI-powered products." },
-  { question: "How do you protect our IP and data?", answer: "GDPR and ISO 27001 compliance. End-to-end encryption. Rigorous NDA frameworks. Your IP is fully yours — always. We treat your data the way we'd treat our own." },
-  { question: "Do you offer ongoing support after launch?", answer: "Yes — flexible maintenance packages covering bug fixes, performance monitoring, security patches, and new feature development. We're a long-term partner, not a one-off vendor." },
+  { 
+    question: "What services does PikoNox offer as a full stack agency?", 
+    answer: "PikoNox provides end-to-end digital product services: custom web and mobile applications, dedicated tech teams, cloud hosting & infrastructure management, enterprise AI/ML transformation, and modern UI/UX design. We take you from discovery and design to deployment and post-launch scale." 
+  },
+  { 
+    question: "How does PikoNox ensure scalable software architecture?", 
+    answer: "We design and build with modern, battle-tested technologies like React, Next.js, Node.js, Python, and TypeScript. By employing containerization (Docker), serverless architectures, and modular API design, we ensure that your software scales efficiently alongside your business growth." 
+  },
+  { 
+    question: "What does your agile development process look like?", 
+    answer: "We work in 2-week sprints with regular milestones and demos. A typical MVP takes 4–8 weeks, while complex enterprise platforms span 3–6 months. Throughout the build, you have a dedicated product manager and direct communication with our engineering team." 
+  },
+  { 
+    question: "Who owns the intellectual property (IP) and source code?", 
+    answer: "You do. 100% of the IP, design assets, and source code belong to you from day one. We sign standard NDA agreements before any engagement and provide clean repository handovers upon project completion." 
+  },
+  { 
+    question: "Do you offer post-launch support and server maintenance?", 
+    answer: "Yes, we offer ongoing SLA-backed support and maintenance. Our packages cover proactive 24/7 server monitoring, performance optimization, dependency and security updates, and active rolling updates for new features." 
+  },
 ];
 
 const STATS = [
@@ -66,7 +81,7 @@ export default function FAQSection({ initialFaqs }: { initialFaqs?: FAQItem[] })
               Frequently Asked<br />Questions
             </h2>
             <p className="text-base text-secondary/50 max-w-sm leading-relaxed">
-              Everything you need to know about partnering with WebXPT for your next digital project.
+              Everything you need to know about partnering with PikoNox for your next digital project.
             </p>
           </div>
         </div>
@@ -82,7 +97,7 @@ export default function FAQSection({ initialFaqs }: { initialFaqs?: FAQItem[] })
               <div className="relative w-full" style={{ paddingBottom: "72%" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=900"
-                  alt="WebXPT team collaboration"
+                  alt="PikoNox team collaboration"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center"
@@ -137,12 +152,12 @@ export default function FAQSection({ initialFaqs }: { initialFaqs?: FAQItem[] })
                 Still unsure? Talk to a<br />
                 <span className="text-white font-semibold">real human, right now.</span>
               </p>
-              <Link
-                href="/contact"
+              <a
+                href="mailto:contact@pikonox.com"
                 className="relative shrink-0 inline-flex items-center gap-2 bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-blue-500 transition-colors shadow-lg shadow-primary/30"
               >
                 Let's talk <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -189,9 +204,9 @@ export default function FAQSection({ initialFaqs }: { initialFaqs?: FAQItem[] })
 
             <div className="flex items-center gap-3 pt-2 pl-2">
               <span className="text-sm text-secondary/35">Still have questions?</span>
-              <Link href="/contact" className="text-sm font-semibold text-primary hover:text-blue-600 inline-flex items-center gap-1 transition-colors">
-                Contact our team <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              <a href="mailto:contact@pikonox.com" className="text-sm font-semibold text-primary hover:text-blue-600 inline-flex items-center gap-1 transition-colors">
+                Contact our team (contact@pikonox.com) <ArrowRight className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
 

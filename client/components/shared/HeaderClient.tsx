@@ -49,7 +49,6 @@ const DEFAULT_DATA: Required<HeaderData> = {
     href: "/",
   },
   contact: {
-    phone: "+1 (123) 456-78-90",
     email: "contact@pikonox.com",
   },
   cta: {
@@ -198,11 +197,16 @@ export default function HeaderClient({ data }: { data?: HeaderData }) {
 
             <Link
               href={header.cta.href || "/contact"}
-              className="group hidden items-center rounded-full bg-primary py-1.5 pl-6 pr-1.5 text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-blue-600 sm:inline-flex"
+              className="group hidden items-center rounded-full bg-primary py-1.5 pl-6 pr-1.5 text-white shadow-lg shadow-primary/25 transition-all duration-300 hover:bg-blue-600 hover:shadow-primary/40 hover:scale-[1.03] active:scale-95 sm:inline-flex relative overflow-hidden"
             >
-              <span className="mr-3 text-[14px] font-bold tracking-wide">{header.cta.label}</span>
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary transition-transform duration-300 group-hover:scale-105">
-                <ArrowUpRight className="h-5 w-5" />
+              {/* Shimmer Sweep Effect */}
+              <span className="absolute inset-0 w-[150%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+
+              <span className="mr-3 text-[14px] font-bold tracking-wide z-10">{header.cta.label}</span>
+              
+              <span className="relative overflow-hidden flex h-10 w-10 items-center justify-center rounded-full bg-white text-primary transition-transform duration-300 group-hover:scale-105 z-10">
+                <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-8 group-hover:-translate-y-8" />
+                <ArrowUpRight className="absolute h-5 w-5 transition-transform duration-300 -translate-x-8 translate-y-8 group-hover:translate-x-0 group-hover:translate-y-0" />
               </span>
             </Link>
 
@@ -343,15 +347,6 @@ export default function HeaderClient({ data }: { data?: HeaderData }) {
                   <div>
                     <p className="text-[12px] font-medium text-gray-400">Official Mail</p>
                     <p className="text-[15px] font-bold text-secondary">{header.contact.email}</p>
-                  </div>
-                </a>
-                <a href={`tel:${header.contact.phone}`} className="group flex items-center gap-4">
-                  <div className="flex size-10 items-center justify-center rounded-full bg-blue-50 text-primary transition-all group-hover:bg-primary group-hover:text-white">
-                    <Phone className="h-4 w-4" />
-                  </div>
-                  <div>
-                    <p className="text-[12px] font-medium text-gray-400">Quick Support</p>
-                    <p className="text-[15px] font-bold text-secondary">{header.contact.phone}</p>
                   </div>
                 </a>
               </div>

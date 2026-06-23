@@ -68,16 +68,17 @@ export default function ContactPublicForm({
 
   const headingHtml =
     shell.sidebarHeadingHtml ||
-    'Reach Out to the <br class="hidden sm:block"/> <span class="text-primary underline decoration-blue-200 underline-offset-8">Experts</span> Today';
+    'Reach Out to the <br class="hidden sm:block"/> <span class="bg-gradient-to-r from-primary to-green-500 bg-clip-text text-transparent">Experts</span> Today';
   const body =
     shell.sidebarBody ||
     "We're committed to providing the highest level of service. Whether you have a specific project in mind or just want to explore possibilities, we're here for you.";
   const formTitle = shell.formTitle || "Send us a Message";
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full blur-3xl translate-x-1/2 -z-10 opacity-60"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/50 rounded-full blur-3xl -translate-x-1/2 -z-10 opacity-40"></div>
+    <section className="py-24 bg-slate-50 relative overflow-hidden">
+      {/* Animated background blobs */}
+      <div className="absolute top-10 right-10 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl opacity-60 animate-[ScaleInOut_8s_infinite] -z-10"></div>
+      <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-green-500/10 rounded-full blur-3xl opacity-40 animate-[ScaleInOut_12s_infinite_reverse] -z-10"></div>
 
       <div className="container relative z-10">
         <div className="grid grid-cols-12 gap-10 lg:gap-16">
@@ -94,31 +95,31 @@ export default function ContactPublicForm({
               <ContactInfoItem
                 icon={Mail}
                 label="Official Email"
-                value={contactData?.email ?? "contact@pikonox.com"}
-                href={`mailto:${contactData?.email ?? "contact@pikonox.com"}`}
-              />
-              <ContactInfoItem
-                icon={Phone}
-                label="Quick Support"
-                value={contactData?.phone ?? "+1 (123) 456-78-90"}
-                href={`tel:${(contactData?.phone ?? "+11234567890").replace(/\D/g, "")}`}
+                value={contactData?.email || "contact@pikonox.com"}
+                href={`mailto:${contactData?.email || "contact@pikonox.com"}`}
               />
               <ContactInfoItem
                 icon={MapPin}
                 label="Our Office"
-                value={contactData?.address ?? "123 Tech Avenue, Silicon Valley, CA 94043"}
+                value={contactData?.address || "Punjab, Pakistan"}
                 href="#"
               />
             </div>
 
-            <div className="mt-12">
-              <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Follow our journey</p>
+            <div className="mt-12 bg-white/30 backdrop-blur-md border border-white/50 p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.01)] max-w-md">
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Follow our journey</p>
               <div className="flex items-center gap-4">
-                {[FaFacebookF, FaTwitter, FaLinkedinIn].map((Icon, idx) => (
+                {[
+                  { Icon: FaFacebookF, href: "https://facebook.com" },
+                  { Icon: FaTwitter, href: "https://x.com" },
+                  { Icon: FaLinkedinIn, href: "https://linkedin.com" }
+                ].map(({ Icon, href }, idx) => (
                   <a
                     key={idx}
-                    href="#"
-                    className="size-12 rounded-full bg-blue-50 text-secondary hover:bg-primary hover:text-white transition-all flex items-center justify-center border border-blue-100 shadow-sm"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="size-11 rounded-full bg-white text-secondary hover:bg-primary hover:text-white hover:scale-105 active:scale-95 transition-all flex items-center justify-center border border-gray-100 shadow-sm"
                   >
                     <Icon className="w-5 h-5" />
                   </a>
@@ -128,11 +129,15 @@ export default function ContactPublicForm({
           </div>
 
           <div className="lg:col-span-7 col-span-12">
-            <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] border border-gray-100 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 transition-all duration-500 group-hover:scale-150"></div>
+            <div 
+              className="bg-slate-900 border border-slate-800 text-white rounded-[2.5rem] p-8 lg:p-12 shadow-[0_30px_70px_-15px_rgba(15,23,42,0.4)] relative overflow-hidden group"
+              style={{ backgroundColor: '#0f172a', borderColor: '#1e293b', color: '#ffffff' }}
+            >
+              {/* Glowing decorative corner */}
+              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-primary/10 to-green-500/10 rounded-full blur-2xl -z-10 pointer-events-none group-hover:scale-125 transition-transform duration-700"></div>
 
-              <h3 className="text-2xl font-black text-secondary mb-8 flex items-center gap-3">
-                <MessageSquare className="w-6 h-6 text-primary" />
+              <h3 className="text-2xl font-black text-white mb-8 flex items-center gap-3" style={{ color: '#ffffff' }}>
+                <MessageSquare className="w-6 h-6 text-green-500" />
                 {formTitle}
               </h3>
 
@@ -146,22 +151,32 @@ export default function ContactPublicForm({
                   <FormInput label="Subject" placeholder="Project Inquiry" value={subject} onChange={setSubject} type="text" />
                 </div>
                 <div className="space-y-2.5">
-                  <label className="text-[14px] font-bold text-secondary/80 ml-1">Your Message</label>
+                  <label className="text-[13px] font-bold text-slate-300 uppercase tracking-wider ml-1" style={{ color: '#cbd5e1' }}>Your Message</label>
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Tell us about your project requirements..."
-                    className="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-5 text-secondary font-medium focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none min-h-[160px]"
+                    className="w-full bg-slate-950/40 border border-slate-800 rounded-2xl px-6 py-5 text-white font-medium placeholder-slate-600 focus:ring-2 focus:ring-primary/40 focus:border-primary focus:bg-slate-950/60 outline-none transition-all resize-none min-h-[160px]"
+                    style={{ backgroundColor: 'rgba(2, 6, 23, 0.4)', border: '1px solid #475569', color: '#ffffff' }}
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={pending}
-                  className="w-full bg-primary hover:bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-lg shadow-primary/25 transition-all flex items-center justify-center gap-3 group disabled:opacity-60"
+                  className="w-full bg-primary hover:bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-3 group/btn relative overflow-hidden active:scale-95 disabled:opacity-60"
                 >
-                  {pending ? "Sending…" : "Send Message Now"}
-                  <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  {/* Shimmer Sweep Effect */}
+                  <span className="absolute inset-0 w-[150%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+
+                  <span className="text-[15px] font-bold tracking-wide z-10">
+                    {pending ? "Sending..." : "Send Message Now"}
+                  </span>
+                  
+                  <span className="relative overflow-hidden flex h-6 w-6 items-center justify-center text-white shrink-0 z-10">
+                    <Send className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-6 group-hover/btn:-translate-y-6" />
+                    <Send className="absolute w-4 h-4 transition-transform duration-300 -translate-x-6 translate-y-6 group-hover/btn:translate-x-0 group-hover/btn:translate-y-0" />
+                  </span>
                 </button>
               </form>
             </div>
@@ -174,13 +189,16 @@ export default function ContactPublicForm({
 
 function ContactInfoItem({ icon: Icon, label, value, href }: { icon: React.ElementType; label: string; value: string; href: string }) {
   return (
-    <a href={href} className="flex items-center gap-5 p-4 rounded-2xl hover:bg-blue-50 transition-colors group">
-      <div className="size-14 rounded-2xl bg-white border border-blue-50 flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform duration-300">
+    <a 
+      href={href} 
+      className="backdrop-blur-md bg-white/40 border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.02)] p-6 rounded-2xl flex items-center gap-5 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300 group"
+    >
+      <div className="size-14 rounded-2xl bg-white border border-gray-100 flex items-center justify-center text-primary shadow-sm group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300 shrink-0">
         <Icon className="w-6 h-6" />
       </div>
       <div>
-        <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">{label}</p>
-        <p className="text-lg font-black text-secondary">{value}</p>
+        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">{label}</p>
+        <p className="text-lg font-extrabold text-secondary tracking-tight break-all">{value}</p>
       </div>
     </a>
   );
@@ -201,13 +219,14 @@ function FormInput({
 }) {
   return (
     <div className="space-y-2.5">
-      <label className="text-[14px] font-bold text-secondary/80 ml-1">{label}</label>
+      <label className="text-[13px] font-bold text-slate-300 uppercase tracking-wider ml-1" style={{ color: '#cbd5e1' }}>{label}</label>
       <input
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full bg-gray-50 border border-gray-100 rounded-2xl px-6 py-4.5 text-secondary font-medium focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+        className="w-full bg-slate-950/40 border border-slate-800 rounded-2xl px-6 py-4 text-white font-medium placeholder-slate-600 focus:ring-2 focus:ring-primary/40 focus:border-primary focus:bg-slate-950/60 outline-none transition-all"
+        style={{ backgroundColor: 'rgba(2, 6, 23, 0.4)', border: '1px solid #475569', color: '#ffffff' }}
       />
     </div>
   );

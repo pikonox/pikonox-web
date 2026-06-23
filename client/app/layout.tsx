@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -55,6 +56,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google Analytics / Tag Manager */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YLWP45FQQT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YLWP45FQQT');
+          `}
+        </Script>
+      </head>
       <body className={`${poppins.variable} min-h-screen selection:bg-primary selection:text-white font-(--font-poppins)`} suppressHydrationWarning>
         <NextTopLoader
           color="#1683F8"
