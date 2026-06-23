@@ -101,8 +101,8 @@ export default function ConsultationSection({ data }: { data?: ContactData }) {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-secondary/50 uppercase tracking-wider mb-1">Email Our Team</h4>
-                  <a href={`mailto:${data?.email ?? "hello@pikonox.com"}`} className="text-xl font-bold text-secondary hover:text-primary transition-colors">
-                    {data?.email ?? "hello@pikonox.com"}
+                  <a href={`mailto:${data?.email ?? "contact@pikonox.com"}`} className="text-xl font-bold text-secondary hover:text-primary transition-colors">
+                    {data?.email ?? "contact@pikonox.com"}
                   </a>
                 </div>
               </div>

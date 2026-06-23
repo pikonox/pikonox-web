@@ -3,6 +3,7 @@
 import { useUIStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, ChevronDown, Mail, Phone, X } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -49,7 +50,7 @@ const DEFAULT_DATA: Required<HeaderData> = {
   },
   contact: {
     phone: "+1 (123) 456-78-90",
-    email: "info@pikonox.com",
+    email: "contact@pikonox.com",
   },
   cta: {
     label: "Let's Connect",
@@ -125,15 +126,24 @@ export default function HeaderClient({ data }: { data?: HeaderData }) {
         <div className="flex items-center justify-between">
           <Link
             href={header.brand.href || "/"}
-            className="group flex items-center gap-1 text-3xl font-extrabold tracking-tight"
+            className="group flex items-center gap-2 text-3xl font-extrabold tracking-tight font-(--font-poppins)"
           >
-            <span className="text-primary transition-colors group-hover:text-blue-400">
-              {header.brand.prefix}
+            <Image
+              src="/logo.png"
+              alt="PikoNox Logo"
+              width={32}
+              height={32}
+              unoptimized
+              className="object-contain transition-transform group-hover:scale-105"
+            />
+            <span>
+              <span className="text-primary transition-colors group-hover:text-blue-400">
+                iko
+              </span>
+              <span className="text-green-500 transition-colors group-hover:text-green-400">
+                Nox
+              </span>
             </span>
-            <span className="text-white transition-colors group-hover:text-gray-200">
-              {header.brand.suffix}
-            </span>
-            <span className="mb-1 ml-0.5 h-2 w-2 rounded-full bg-green-500" />
           </Link>
 
           <nav className="hidden xl:block">
@@ -184,13 +194,7 @@ export default function HeaderClient({ data }: { data?: HeaderData }) {
           </nav>
 
           <div className="flex items-center gap-4">
-            <a
-              href={`tel:${header.contact.phone}`}
-              className="hidden items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[15px] font-bold text-white transition-colors hover:text-primary lg:flex"
-            >
-              <Phone className="h-4 w-4 text-primary" />
-              <span className="tracking-wide">{header.contact.phone}</span>
-            </a>
+
 
             <Link
               href={header.cta.href || "/contact"}
@@ -235,12 +239,25 @@ export default function HeaderClient({ data }: { data?: HeaderData }) {
           <div className="flex items-center justify-between border-b border-gray-100 p-6">
             <Link
               href={header.brand.href || "/"}
-              className="flex items-center gap-1 text-2xl font-bold tracking-tight"
+              className="flex items-center gap-2 text-2xl font-bold tracking-tight font-(--font-poppins)"
               onClick={closeMobileMenu}
             >
-              <span className="text-primary">{header.brand.prefix}</span>
-              <span className="text-secondary">{header.brand.suffix}</span>
-              <span className="mb-0.5 h-1.5 w-1.5 rounded-full bg-green-500" />
+              <Image
+                src="/logo.png"
+                alt="PikoNox Logo"
+                width={28}
+                height={28}
+                unoptimized
+                className="object-contain"
+              />
+              <span>
+                <span className="text-primary">
+                  iko
+                </span>
+                <span className="text-green-500">
+                  Nox
+                </span>
+              </span>
             </Link>
             <button
               onClick={closeMobileMenu}

@@ -114,7 +114,7 @@ async function main() {
     heading: "Ready to Accelerate Your Growth?",
     description: "Whether you need elite AI engineering, robust cloud infrastructure, or a dedicated software team — our experts are ready to deliver.",
     phone: "+1 (123) 456-7890",
-    email: "hello@pikonox.com",
+    email: "contact@pikonox.com",
     address: "Silicon Valley, CA — Remote Worldwide",
     services: [
       "AI & Machine Learning",
@@ -699,7 +699,7 @@ async function main() {
     brandSuffix: "Xprt",
     brandHref: "/",
     phone: "+1 (123) 456-7890",
-    email: "hello@pikonox.com",
+    email: "contact@pikonox.com",
     ctaLabel: "Let's Connect",
     ctaHref: "/contact",
     navItems: JSON.stringify([

@@ -47,7 +47,7 @@ export default async function Header() {
     },
     contact: {
       phone: config?.phone || "+1 (123) 456-78-90",
-      email: config?.email || "info@pikonox.com",
+      email: config?.email || "contact@pikonox.com",
     },
     cta: {
       label: config?.ctaLabel || "Let's Connect",

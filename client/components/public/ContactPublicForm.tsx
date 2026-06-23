@@ -94,8 +94,8 @@ export default function ContactPublicForm({
               <ContactInfoItem
                 icon={Mail}
                 label="Official Email"
-                value={contactData?.email ?? "info@pikonox.com"}
-                href={`mailto:${contactData?.email ?? "info@pikonox.com"}`}
+                value={contactData?.email ?? "contact@pikonox.com"}
+                href={`mailto:${contactData?.email ?? "contact@pikonox.com"}`}
               />
               <ContactInfoItem
                 icon={Phone}
