@@ -51,6 +51,19 @@ const DEFAULT_DATA: Required<FooterData> = {
   copyrightText: "All Rights Reserved",
 };
 
+const COUNTRIES = [
+  { name: "Bangladesh", subtitle: "Dhaka, Bangladesh", code: "bd" },
+  { name: "UAE", subtitle: "Dubai, UAE", code: "ae" },
+  { name: "Saudi Arabia", subtitle: "Riyadh, KSA", code: "sa" },
+  { name: "Qatar", subtitle: "Doha, Qatar", code: "qa" },
+  { name: "Indonesia", subtitle: "Jakarta, Indonesia", code: "id" },
+  { name: "Nigeria", subtitle: "Lagos, Nigeria", code: "ng" },
+  { name: "Pakistan", subtitle: "Punjab, Pakistan", code: "pk" },
+  { name: "United Kingdom", subtitle: "London, UK", code: "gb" },
+  { name: "United States", subtitle: "New York, USA", code: "us" },
+  { name: "Canada", subtitle: "Toronto, Canada", code: "ca" },
+];
+
 export default async function Footer() {
   const config = await getFooterConfig();
   
@@ -77,51 +90,48 @@ export default async function Footer() {
 
   return (
     <footer className="relative bg-[#d9e1e8]">
-      <div className="pt-10 xl:pt-32">
-        <div className="container">
-          <div className="grid grid-cols-12 gap-7.5">
-            <div className="col-span-12 mb-10 lg:col-span-6 lg:mb-0">
-              <h2 className="mb-6 text-2xl font-semibold text-secondary sm:text-3xl lg:text-4xl xl:mb-16 xl:text-[55px]/[65px]">
-                {footer.cta.title}
-              </h2>
-              <Link
-                href={footer.cta.buttonHref || "/contact"}
-                className="btn relative mb-5 h-15 overflow-hidden rounded-full border border-white bg-white pl-7.5 pr-1 text-secondary shadow-md transition hover:border-primary"
-              >
-                <span className="button-flair" />
-                <span className="pxl-button-text relative z-1 text-xl font-semibold">
-                  {footer.cta.buttonLabel}
-                </span>
-                <span className="relative z-1 ml-20 inline-flex size-12 items-center justify-center overflow-hidden rounded-full bg-green-500 text-secondary">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7 7H13V13" stroke="white" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M7 13L13 7" stroke="white" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-              </Link>
-            </div>
+      <div className="relative w-full h-[420px] md:h-[500px] lg:h-[580px] bg-black overflow-hidden">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          preload="none" 
+          className="absolute inset-0 w-full h-full object-cover opacity-80 z-0"
+        >
+          <source src="https://www.xiomtech.net/footer_globe.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Top gradient fade overlay */}
+        <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-white via-transparent to-transparent h-32 z-10 pointer-events-none" />
+        
+        {/* Bottom gradient fade overlay */}
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-transparent to-transparent h-32 z-10 pointer-events-none" />
 
-            <div className="col-span-12 lg:col-span-6">
-              <div className="relative mb-16">
-                <img
-                  src={footer.mapImage || "/map.svg"}
-                  alt="Global office locations"
-                  className="w-full rounded-xl"
+        {/* Glassmorphic Country Cards Grid */}
+        <div className="absolute inset-x-0 bottom-12 md:bottom-16 flex justify-center z-20 px-5">
+          <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-10 gap-3 md:gap-4 max-w-7xl w-full">
+            {COUNTRIES.map((country) => (
+              <div 
+                key={country.code} 
+                className="bg-black/5 backdrop-blur-sm border border-white/20 rounded-xl px-2 py-4 text-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                <img 
+                  alt={`${country.name} flag`} 
+                  loading="lazy" 
+                  width="40" 
+                  height="30" 
+                  className="mx-auto mb-2 rounded-sm" 
+                  src={`https://flagcdn.com/w80/${country.code}.png`} 
                 />
+                <p className="text-white font-bold text-sm">{country.name}</p>
+                <p className="text-white/60 text-xs mt-0.5 whitespace-nowrap overflow-hidden text-ellipsis px-1">{country.subtitle}</p>
               </div>
-              <div className="rounded-t-[14px] bg-black px-2.5 py-3.5 xl:px-6">
-                <div className="flex items-center gap-1.5">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M16.6666 8.33317C16.6666 12.494 12.0508 16.8273 10.5008 18.1657C10.3564 18.2743 10.1806 18.333 9.99998 18.333C9.81931 18.333 9.64354 18.2743 9.49915 18.1657C7.94915 16.8273 3.33331 12.494 3.33331 8.33317C3.33331 6.56506 4.03569 4.86937 5.28593 3.61913C6.53618 2.36888 8.23187 1.6665 9.99998 1.6665C11.7681 1.6665 13.4638 2.36888 14.714 3.61913C15.9643 4.86937 16.6666 6.56506 16.6666 8.33317Z" stroke="#1683F8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M10 10.8335C11.3807 10.8335 12.5 9.71421 12.5 8.3335C12.5 6.95278 11.3807 5.8335 10 5.8335C8.61929 5.8335 7.5 6.95278 7.5 8.3335C7.5 9.71421 8.61929 10.8335 10 10.8335Z" stroke="#1683F8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                  <span className="text-base font-semibold text-white">{primaryLocation}</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
 
       <div className="bg-white">
         <div className="container">

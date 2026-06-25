@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Script from "next/script";
@@ -96,6 +98,8 @@ export default function RootLayout({
           }}
         />
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
