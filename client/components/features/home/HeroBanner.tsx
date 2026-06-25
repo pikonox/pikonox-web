@@ -121,22 +121,6 @@ export default function HeroBanner({ data }: { data?: HeroData }) {
   return (
     <section className="relative w-full h-screen min-h-[700px] xl:min-h-screen bg-black overflow-hidden">
       
-      {/* Universal Background Video */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
-        <iframe 
-          className="absolute top-1/2 left-1/2 w-[150vw] h-[150vh] min-w-[1920px] min-h-[1080px] -translate-x-1/2 -translate-y-1/2" 
-          src={`https://www.youtube.com/embed/${bgVideoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${bgVideoId}&showinfo=0&rel=0&modestbranding=1`} 
-          title="DUBAI, United Arab Emirates In 8K ULTRA HD HDR 60 FPS." 
-          frameBorder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-      {/* Global Overlay over context video */}
-      <div className="absolute inset-0 bg-black/40 z-[1] pointer-events-none" />
-
       {mounted && (
         <Swiper
           modules={[EffectFade, Autoplay, Navigation, Pagination]}
@@ -158,6 +142,18 @@ export default function HeroBanner({ data }: { data?: HeroData }) {
             <SwiperSlide key={idx} className="relative w-full h-full bg-transparent">
               <div className="absolute inset-0 w-full h-full">
                 
+                {/* Local Video Background */}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                  src={`/videos/${(idx % 4) + 1}.mp4`}
+                />
+                {/* Local Overlay to ensure text readability */}
+                <div className="absolute inset-0 bg-black/50" />
+
                 {/* Slide Content */}
                 <div className="container mx-auto relative z-10 h-full flex flex-col">
                   <div className="pt-[100px] lg:pt-[105px] flex-1 pb-24">

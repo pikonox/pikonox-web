@@ -6,17 +6,17 @@ const TEAM_MEMBERS = [
   {
     name: "Muhammad Fahad",
     role: "Founder & CTO",
-    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/1.png",
+    image: "/team/mfahad.webp",
   },
   {
     name: "Muhammad Salman",
     role: "Full Stack Developer",
-    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/2.png",
+    image: "",
   },
   {
     name: "Muhammad Saleem",
     role: "Mern Stack Developer",
-    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/3.png",
+    image: "/team/msaleem.webp",
   },
   {
     name: "Sikandar Hayat",
@@ -31,7 +31,7 @@ const TEAM_MEMBERS = [
   {
     name: "Bilal Shahid",
     role: "Product Designer",
-    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/2.png",
+    image: "/team/bilals.webp",
   },
 ];
 
@@ -68,18 +68,15 @@ export default function TeamSection({ initialTeam }: { initialTeam?: TeamMember[
       />
 
       <div className="container relative z-1">
-        <div className="flex items-end justify-between mb-16 flex-wrap gap-5">
-          <div className="max-w-2xl">
-            <span className="text-primary text-base font-semibold uppercase tracking-wider mb-2 block">
-              Our Team
-            </span>
-            <h2 className="2xl:text-5xl lg:text-[50px] sm:text-4xl text-3xl font-semibold text-white leading-tight">
-              The Team Behind Your Success
-            </h2>
-          </div>
-          <p className="text-white/60 max-w-md text-lg">
-            Our experts bring decades of experience across finance, strategy, and
-            technology to help your business thrive.
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-primary text-base font-bold uppercase tracking-widest mb-3 block">
+            Leadership & Experts
+          </span>
+          <h2 className="2xl:text-5xl lg:text-[50px] sm:text-4xl text-3xl font-bold text-white leading-tight mb-6">
+            The Visionaries Driving Our Success
+          </h2>
+          <p className="text-white/70 text-lg sm:text-xl leading-relaxed">
+            We are a collective of passionate technologists, innovative designers, and strategic thinkers dedicated to building scalable digital solutions that empower your business to thrive in a connected world.
           </p>
         </div>
 
@@ -149,6 +146,7 @@ function TeamCard({ member }: { member: { name: string; role: string; image: str
           src={member.image}
           alt={member.name}
           fill
+          quality={100}
           className="object-cover group-hover:scale-105 transition-transform duration-700"
           sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
         />
