@@ -14,15 +14,23 @@ interface ContactData {
 }
 
 export default function ConsultationSection({ data }: { data?: ContactData }) {
+  const defaultServices = [
+    "Web Development",
+    "Point of Sale (POS) Systems",
+    "Mobile App Development",
+    "Custom Software Development",
+    "AI & Machine Learning",
+    "Cloud Infrastructure",
+    "UI/UX Design",
+    "IT Consulting",
+    "Dedicated Tech Teams",
+    "Other Inquiry",
+  ];
+
+  // Merge CMS services with default services, ensuring uniqueness
   const services = data?.services?.length
-    ? data.services
-    : [
-        "AI & Machine Learning",
-        "Cloud Infrastructure",
-        "Custom Software Development",
-        "Dedicated Tech Teams",
-        "Other Inquiry",
-      ];
+    ? Array.from(new Set([...data.services, ...defaultServices]))
+    : defaultServices;
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

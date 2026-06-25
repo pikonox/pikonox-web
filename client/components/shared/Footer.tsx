@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Mail, Phone, MessageCircle } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaXTwitter } from "react-icons/fa6";
 import { getFooterConfig } from "@/actions/site-config";
 
 type FooterData = {
@@ -132,6 +135,68 @@ export default async function Footer() {
         </div>
       </div>
 
+      {/* Dark Brand & Contact Section */}
+      <div className="bg-[#0a0a0a] text-white py-16">
+        <div className="container px-4 sm:px-6">
+          <div className="flex flex-col lg:flex-row justify-between gap-10">
+            {/* Left: Brand & Description */}
+            <div className="max-w-md">
+              <div className="flex items-center gap-3 text-3xl font-extrabold tracking-tight font-(--font-poppins) mb-6">
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={40}
+                  height={40}
+                  unoptimized
+                  className="object-contain"
+                />
+                <span>
+                  <span className="text-primary">iko</span>
+                  <span className="text-green-500">Nox</span>
+                </span>
+              </div>
+              <p className="text-gray-400 text-[15px] leading-relaxed">
+                Building the future of business software. From consulting to cutting-edge solutions, we create enterprise-grade technology that powers companies across Pakistan, the GCC, and beyond.
+              </p>
+            </div>
+
+            {/* Right: Contact & Socials */}
+            <div className="flex flex-col lg:items-end justify-between gap-8">
+              {/* Contact Info */}
+              <div className="flex flex-wrap lg:justify-end gap-6 text-sm text-gray-300">
+                <a href="mailto:info@pikonox.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4" />
+                  info@pikonox.com
+                </a>
+                <a href="https://wa.me/923000000000" className="flex items-center gap-2 hover:text-green-500 transition-colors">
+                  <MessageCircle className="w-4 h-4" />
+                  +92 300 000 0000
+                </a>
+                <a href="tel:+923000000000" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <Phone className="w-4 h-4" />
+                  +92 300 000 0000
+                </a>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex items-center gap-3">
+                <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:bg-primary hover:border-primary transition-all duration-300 text-gray-300 hover:text-white">
+                  <FaFacebookF className="w-4 h-4" />
+                </a>
+                <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:bg-pink-600 hover:border-pink-600 transition-all duration-300 text-gray-300 hover:text-white">
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+                <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 text-gray-300 hover:text-white">
+                  <FaLinkedinIn className="w-4 h-4" />
+                </a>
+                <a href="#" className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:bg-gray-800 hover:border-gray-800 transition-all duration-300 text-gray-300 hover:text-white">
+                  <FaXTwitter className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="bg-white">
         <div className="container">

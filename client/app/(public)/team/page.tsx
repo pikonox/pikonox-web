@@ -24,7 +24,6 @@ export default async function TeamPage() {
 
   return (
     <>
-      <Breadcrumb title={bc.title} subtitle={bc.subtitle} />
       <TeamPageRenderer />
     </>
   );

@@ -1,30 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
 const TEAM_MEMBERS = [
   {
-    name: "Robert Wilson",
-    role: "Chief Financial Officer",
+    name: "Muhammad Fahad",
+    role: "Founder & CTO",
     image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/1.png",
   },
   {
-    name: "Diana Ross",
-    role: "Strategy Director",
+    name: "Muhammad Salman",
+    role: "Full Stack Developer",
     image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/2.png",
   },
   {
-    name: "Michael Chen",
-    role: "Senior Consultant",
+    name: "Muhammad Saleem",
+    role: "Mern Stack Developer",
     image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/3.png",
   },
   {
-    name: "Sarah Johnson",
-    role: "Tax Advisory Head",
+    name: "Sikandar Hayat",
+    role: "Sr. Mobile App Developer",
     image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/4.png",
+  },
+  {
+    name: "Muhammad Umair",
+    role: "PHP,Laravel Developer",
+    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/1.png",
+  },
+  {
+    name: "Bilal Shahid",
+    role: "Product Designer",
+    image: "https://plexify.dexignzone.com/tailwind/business-consulting/assets/images/team/2.png",
   },
 ];
 
@@ -61,7 +68,7 @@ export default function TeamSection({ initialTeam }: { initialTeam?: TeamMember[
       />
 
       <div className="container relative z-1">
-        <div className="flex items-end justify-between mb-12 flex-wrap gap-5">
+        <div className="flex items-end justify-between mb-16 flex-wrap gap-5">
           <div className="max-w-2xl">
             <span className="text-primary text-base font-semibold uppercase tracking-wider mb-2 block">
               Our Team
@@ -76,54 +83,38 @@ export default function TeamSection({ initialTeam }: { initialTeam?: TeamMember[
           </p>
         </div>
 
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={24}
-          slidesPerView={1}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-          breakpoints={{
-            576: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-            1400: { slidesPerView: 4 },
-          }}
-          className="!overflow-visible"
-        >
-          {team.map((member) => (
-            <SwiperSlide key={member.name}>
-              <div className="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <div className="relative h-[400px]">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 25vw"
-                  />
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent" />
-                </div>
-
-                {/* Info */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
-                  <span className="text-primary text-base font-medium">{member.role}</span>
-                  {/* Social Links */}
-                  <div className="flex gap-3 mt-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    {["linkedin-in", "x-twitter", "envelope"].map((icon) => (
-                      <a
-                        key={icon}
-                        href="#"
-                        className="size-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-primary hover:text-secondary transition-all"
-                      >
-                        <i className={`fa-${icon === "envelope" ? "solid" : "brands"} fa-${icon} text-sm`} />
-                      </a>
-                    ))}
-                  </div>
-                </div>
+        <div className="flex flex-col" style={{ gap: '5rem' }}>
+          {/* Top Tier: 1 Member */}
+          {team.length > 0 && (
+            <div className="flex justify-center">
+              <div className="w-full max-w-sm">
+                <TeamCard member={team[0]} />
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            </div>
+          )}
+
+          {/* Middle Tier: 2 Members */}
+          {team.length > 1 && (
+            <div className="flex justify-center gap-6 lg:gap-12 flex-wrap">
+              {team.slice(1, 3).map((member) => (
+                <div key={member.name} className="w-full sm:w-[calc(50%-1.5rem)] max-w-sm">
+                  <TeamCard member={member} />
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Bottom Tier: 3 Members */}
+          {team.length > 3 && (
+            <div className="flex justify-center gap-6 lg:gap-10 flex-wrap">
+              {team.slice(3, 6).map((member) => (
+                <div key={member.name} className="w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.66rem)] max-w-sm">
+                  <TeamCard member={member} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
 
         {/* Career CTA */}
         <div className="mt-16 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex items-center justify-between flex-wrap gap-6">
@@ -147,5 +138,27 @@ export default function TeamSection({ initialTeam }: { initialTeam?: TeamMember[
         </div>
       </div>
     </section>
+  );
+}
+
+function TeamCard({ member }: { member: { name: string; role: string; image: string } }) {
+  return (
+    <div className="group relative rounded-2xl overflow-hidden cursor-pointer w-full shadow-lg border border-white/5">
+      <div className="relative w-full" style={{ minHeight: '400px' }}>
+        <Image
+          src={member.image}
+          alt={member.name}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+        <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 tracking-wide">{member.name}</h3>
+        <span className="text-primary text-sm sm:text-base font-semibold tracking-wider uppercase">{member.role}</span>
+      </div>
+    </div>
   );
 }
