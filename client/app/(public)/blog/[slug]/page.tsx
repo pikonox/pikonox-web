@@ -14,7 +14,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  let blog = await getBlogBySlug(slug);
+  let blog: any = await getBlogBySlug(slug);
   
   if (!blog) {
     blog = DEFAULT_BLOGS.find((b) => b.slug === slug);
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BlogDetailsPage({ params }: PageProps) {
   const { slug } = await params;
-  let [blog, allBlogs] = await Promise.all([
+  let [blog, allBlogs]: [any, any] = await Promise.all([
     getBlogBySlug(slug),
     getBlogPosts()
   ]);
